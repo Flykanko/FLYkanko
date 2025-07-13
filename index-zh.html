@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLY观光有限公司</title>
+  <link rel="stylesheet" href="flykankou-style.css">
+</head>
+<body>
+  <div class="language-switcher">
+    <a href="index-ja.html">日本語</a>
+    <a href="index-en.html">English</a>
+    <a href="index-zh.html"><strong>简体中文</strong></a>
+    <a href="index-tw.html">繁體中文</a>
+    <a href="index-ko.html">한국어</a>
+    <a href="index-th.html">ภาษาไทย</a>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <img src="img/logo.png" alt="FLY观光标志" style="height: 64px;" />
+        <h1>FLY观光有限公司</h1>
+      </div>
+      <nav>
+        <a href="#fleet">可选巴士车型</a>
+        <a href="#tour-examples">旅游案例</a>
+        <a href="#use">使用场景</a>
+        <a href="#flow">预约流程</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+      <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider-wrapper">
+      <div class="slider" id="slider">
+        <div class="slide" style="background-image: url('img/bus1.jpg');">
+          <h1>舒适、安心、实惠的一日游</h1>
+          <p>在四季流转中，感受身心放松的旅程</p>
+          <a href="#contact" class="cta-button">联系我们</a>
+        </div>
+        <div class="slide" style="background-image: url('img/bus2.jpg');"></div>
+        <div class="slide" style="background-image: url('img/bus3.jpg');"></div>
+        <div class="slide" style="background-image: url('img/bus4.jpg');"></div>
+      </div>
+      <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section style="padding: 60px 20px; background-color: #f9f9f9;">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px;">
+      <div style="flex: 1 1 60%; min-width: 320px;">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+          <iframe src="https://www.youtube.com/embed/KtxIbUpLUcc?rel=0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        </div>
+      </div>
+      <div style="flex: 1 1 35%; min-width: 280px;">
+        <h2 style="font-size: 1.5rem; font-weight: bold; color: #111; margin-bottom: 12px;">被媒体采访</h2>
+        <h3 style="font-size: 1rem; color: #666; margin-bottom: 20px;">媒体的信任，就是客户的信任</h3>
+        <p style="font-size: 0.9rem; line-height: 1.7; color: #333;">
+          我们通过电视采访，向大家展示了FLY观光在日常运营中对安全性和舒适性的坚持。<br>
+          驾驶员严格受训，车辆维保规范，并始终以客户为中心提供服务。<br>
+          我们不仅是交通工具，更希望成为您可信赖的旅伴。<br><br>
+          我们的全体员工始终以“让顾客想再次乘坐”为目标，真诚、认真地投入每一次接待服务。<br><br>
+          欢迎点击下方视频，了解FLY观光的魅力与日常努力！
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tour-examples">
+  <h2>旅游案例</h2>
+
+  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
+    <div style="flex: 1 1 50%;">
+      <img src="img/13.jpg" alt="大观峰展望台" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    </div>
+    <div style="flex: 1 1 45%;">
+      <h3>大观峰绝美景观</h3>
+      <p>在阿苏著名的大观峰展望台俯瞰雄伟自然，享受放松的旅程。</p>
+    </div>
+  </div>
+
+  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; flex-direction: row-reverse; margin-bottom: 3rem;">
+    <div style="flex: 1 1 50%;">
+      <img src="img/14.jpg" alt="阿苏草原风景" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    </div>
+    <div style="flex: 1 1 45%;">
+      <h3>辽阔草原中的疗愈空间</h3>
+      <p>在被广阔草原包围的阿苏地区，尽享身心治愈的时光。</p>
+    </div>
+  </div>
+
+  
+  <div class="fukuoka-tour-group">
+    <div class="fukuoka-tour-label">福冈一日游</div>
+    <div class="spot-gallery five-columns fukuoka-gallery">
+      <div class="spot-item"><img src="img/15.jpg" alt="福冈地图" /><p>福冈地图</p></div>
+      <div class="spot-item"><img src="img/16.jpg" alt="宗像大社" /><p>宗像大社</p></div>
+      <div class="spot-item"><img src="img/17.jpg" alt="海之中道" /><p>海之中道</p></div>
+      <div class="spot-item"><img src="img/18.jpg" alt="太宰府天满宫" /><p>太宰府天满宫</p></div>
+      <div class="spot-item"><img src="img/19.jpg" alt="柳川游船" /><p>柳川游船</p></div>
+    </div>
+  </div>
+
+
+<div class="fukuoka-tour-group">
+    <div class="fukuoka-tour-label">福冈一日游</div>
+    <div class="spot-gallery five-columns fukuoka-gallery">
+      <div class="spot-item"><img src="img/15.jpg" alt="福冈地图" /><p>福冈地图</p></div>
+      <div class="spot-item"><img src="img/16.jpg" alt="宗像大社" /><p>宗像大社</p></div>
+      <div class="spot-item"><img src="img/17.jpg" alt="海之中道" /><p>海之中道</p></div>
+      <div class="spot-item"><img src="img/18.jpg" alt="太宰府天满宫" /><p>太宰府天满宫</p></div>
+      <div class="spot-item"><img src="img/19.jpg" alt="柳川游船" /><p>柳川游船</p></div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section" id="use">
+    <h2>使用场景</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <img src="img/9.jpg" alt="观光旅游 / 学校郊游" />
+        <p><strong>观光旅游 / 学校郊游</strong><br>乘坐舒适的大型巴士开启愉快之旅</p>
+      </div>
+      <div class="service-box">
+        <img src="img/10.jpg" alt="企业 / 团体接送" />
+        <p><strong>企业 / 团体接送</strong><br>可应对定期班车与包车服务</p>
+      </div>
+      <div class="service-box">
+        <img src="img/11.jpg" alt="活动 / 展览运输" />
+        <p><strong>活动 / 展览</strong><br>同时运送人员与设备</p>
+      </div>
+      <div class="service-box">
+        <img src="img/12.jpg" alt="社区服务 / 福利接送" />
+        <p><strong>社区服务 / 福利接送</strong><br>贴近在地，灵活应变</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="flow">
+    <h2>预约流程</h2>
+    <div class="flow-container">
+      <div class="flow-steps">
+        <div class="step">咨询</div>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+        <div class="step">报价</div>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+        <div class="step">申请</div>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+        <div class="step">汇款</div>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+        <div class="step done">✅ 完成！</div>
+      </div>
+      <p class="flow-note">
+        ※ 报价时请提供：预计出行日期、人数、上车地点、目的地等信息。
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>联系我们</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info-box">
+        <h3>公司信息</h3>
+        <p><strong>FLY观光有限公司</strong></p>
+        <p>邮编813-0023<br>日本福冈市东区蒲田4丁目5-53</p>
+        <p>电话：092-519-0886<br>传真：092-516-3414</p>
+        <p>总公司（松岛）：<br>福冈市东区松岛3丁目13-8-401</p>
+        <p>熊本营业所：<br>熊本县菊池市泗水町吉富3201-4<br>Espoir 201</p>
+        <p>熊本传真：0968-41-8706</p>
+        <p>邮箱：flykankou@yahoo.co.jp</p>
+
+        <div class="social-links">
+          <div style="text-align: center;">
+            <img src="img/line-qr.png" alt="LINE 二维码" width="120" />
+            <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID：fly20250407@gmail.com</p>
+          </div>
+          <div style="text-align: center;">
+            <img src="img/wechat-qr.png" alt="WeChat 二维码" width="120" />
+            <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID：FLYkankou</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-box">
+        <h3>在线咨询表单</h3>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezLi5hGcaP8U-VPw6MPNnW5jn4hk0zFwA4O4hw2AiU_4M9Eg/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 FLY观光有限公司 版权所有
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const slider = document.getElementById("slider");
+    function moveSlide(step) {
+      currentIndex = (currentIndex + step + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
+    }
+    setInterval(() => moveSlide(1), 5000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLY Kanko - หน้าประชาสัมพันธ์</title>
+  <link rel="stylesheet" href="flykankou-style.css"/>
+</head>
+<body>
+  <div class="language-switcher">
+    <a href="index-ja.html">日本語</a>
+    <a href="index-en.html">English</a>
+    <a href="index-zh.html">简体中文</a>
+    <a href="index-tw.html">繁體中文</a>
+    <a href="index-ko.html">한국어</a>
+    <a href="index-th.html">ภาษาไทย</a>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <img src="logo.png" alt="FLY観光ロゴ" style="height: 64px;" />
+        <h1>FLY Kanko</h1>
+      </div>
+      <nav>
+        <a href="#fleet">รถโดยสารที่คุณเลือกได้</a>
+        <a href="#tour-examples">ตัวอย่างทัวร์</a>
+        <a href="#use">การใช้งานตามวัตถุประสงค์</a>
+        <a href="#flow">ขั้นตอนการจอง</a>
+        <a href="#contact">ติดต่อเรา</a>
+      </nav>
+      <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider-wrapper">
+      <div class="slider" id="slider">
+        <div class="slide" style="background-image: url('bus1.jpg');">
+          <h1>เดินทางด้วยรถบัส! สะดวก สบาย และคุ้มค่า</h1>
+          <p>เพลิดเพลินกับการเดินทางท่ามกลางฤดูกาลที่เปลี่ยนไป</p>
+          <a href="#contact" class="cta-button">ติดต่อเรา</a>
+        </div>
+        <div class="slide" style="background-image: url('bus2.jpg');"></div>
+        <div class="slide" style="background-image: url('bus3.jpg');"></div>
+        <div class="slide" style="background-image: url('bus4.jpg');"></div>
+      </div>
+      <button class="arrow left" onclick="moveSlide(-1)">❮</button>
+      <button class="arrow right" onclick="moveSlide(1)">❯</button>
+    </div>
+  </section>
+
+  <section style="padding: 60px 20px; background-color: #f9f9f9;">
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px;">
+      <div style="flex: 1 1 60%; min-width: 320px;">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+          <iframe src="https://www.youtube.com/embed/KtxIbUpLUcc?rel=0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        </div>
+      </div>
+
+      <div style="flex: 1 1 35%; min-width: 280px;">
+        <h2 style="font-size: 1.5rem; font-weight: bold; color: #111; margin-bottom: 12px;">
+          แนะนำโดย FBS<br>
+          ความไว้วางใจจากสื่อ คือ ความมั่นใจจากลูกค้า
+        </h2>
+        <h3 style="font-size: 1rem; color: #666; margin-bottom: 20px;">
+          FLY Kanko สนับสนุนทุกการเดินทางอย่างปลอดภัยและสะดวกสบาย
+        </h3>
+        <p style="font-size: 0.9rem; line-height: 1.7; color: #333;">
+          เราได้รับความไว้วางใจจากสื่อในด้านความปลอดภัยและความสะดวกสบายในการเดินทาง<br><br>
+          คนขับของเราผ่านการฝึกอบรมอย่างเข้มงวด และรถทุกคันได้รับการดูแลตามมาตรฐาน<br>
+          ไม่ใช่แค่ “ยานพาหนะ” แต่คือ “พาร์ทเนอร์ที่คุณวางใจได้”<br><br>
+          โปรดรับชมวิดีโอเพื่อสัมผัสความใส่ใจของเรา
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tour-examples">
+    <h2>ตัวอย่างทัวร์</h2>
+    <p class="center-text">
+      ตัวอย่างทัวร์แบบไปเช้าเย็นกลับสู่พื้นที่คุมาโมโตะและอาโสะ<br>
+      ธรรมชาติอุดมสมบูรณ์ วิวสวย พร้อมบริการรับส่งปลอดภัย
+    </p>
+    <div class="tour-photos">
+      <img src="1.jpg" alt="ภูเขา" />
+      <img src="2.jpg" alt="ทุ่งหญ้าอาโสะ" />
+    </div>
+  </section>
+
+  <section class="section" id="fleet">
+    <h2 style="text-align: center; margin-bottom: 2rem;">รถโดยสารที่คุณเลือกได้</h2>
+    <div class="bus-type-grid">
+      <div class="bus-card">
+        <img src="4.jpg" alt="รถบัสขนาดใหญ่" />
+        <h3>รถบัสขนาดใหญ่</h3>
+        <p>11 คัน / 60 ที่นั่ง</p>
+      </div>
+      <div class="bus-card">
+        <img src="7.jpg" alt="รถบัสขนาดกลาง" />
+        <h3>รถบัสขนาดกลาง</h3>
+        <p>4 คัน / 40 ที่นั่ง</p>
+      </div>
+      <div class="bus-card">
+        <img src="4.jpg" alt="ไมโครบัส" />
+        <h3>ไมโครบัส</h3>
+        <p>2 คัน / 25 ที่นั่ง</p>
+      </div>
+      <div class="bus-card">
+        <img src="7.jpg" alt="ไฮเอซ" />
+        <h3>ไฮเอซ</h3>
+        <p>2 คัน / 10 ที่นั่ง</p>
+      </div>
+    </div>
+
+    <div class="bus-details-grid">
+      <div class="bus-detail-box">
+        <h4>การออกแบบที่มุ่งเน้นความปลอดภัย</h4>
+        <img src="7.jpg" alt="ภายในรถ" />
+        <p>ติดตั้งเข็มขัดนิรภัยครบทุกที่นั่งเพื่อความปลอดภัยของคุณ</p>
+      </div>
+      <div class="bus-detail-box">
+        <h4>พนักงานขับที่เน้นความปลอดภัย</h4>
+        <img src="7.jpg" alt="คนขับ" />
+        <p>พูดภาษาญี่ปุ่นและจีนได้ หากมีคำถามสามารถสอบถามได้</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="flow">
+    <div class="flow-container">
+      <div class="flow-title">ขั้นตอนการจอง</div>
+      <div class="flow-steps">
+        <div class="step">สอบถาม</div>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+        <div class="step">ขอใบเสนอราคา</div>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+        <div class="step">ยืนยันการจอง</div>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+        <div class="step">ชำระเงิน</div>
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+        <div class="step done">
+          <span class="check">✅</span> เสร็จสมบูรณ์！
+        </div>
+      </div>
+      <div class="flow-note">
+        ※ กรุณาแจ้งข้อมูล เช่น วันที่เดินทาง จำนวนผู้โดยสาร สถานที่รับ-ส่ง และจุดหมายปลายทาง
+      </div>
+    </div>
+  </section>
+  <section class="section" id="contact">
+    <h2>ติดต่อบริษัท / ข้อมูล</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info-box">
+        <h3>ข้อมูลบริษัท</h3>
+        <p><strong>FLY Kanko</strong></p>
+        <p>〒813-0023<br>4-5-53 Kamata, Higashi-ku, Fukuoka-shi, Fukuoka</p>
+        <p>โทร: 092-519-0886<br>แฟกซ์: 092-516-3414</p>
+        <p>สำนักงานใหญ่ (Matsushima):<br>3-13-8-401 Matsushima, Higashi-ku, Fukuoka</p>
+        <p>สาขาคุมาโมโตะ:<br>3201-4 Yoshitomi, Kikuchi-shi, Kumamoto<br>ห้อง 201</p>
+        <p>แฟกซ์ (คุมาโมโตะ): 0968-41-8706</p>
+        <p>อีเมล: flykankou@yahoo.co.jp</p>
+
+        <div style="display: flex; gap: 1.2rem; align-items: flex-start; margin-top: 1rem;">
+          <div style="text-align: center;">
+            <img src="line-qr.png" alt="LINE QR" width="120" />
+            <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID: fly20250407@gmail.com</p>
+          </div>
+          <div style="text-align: center;">
+            <img src="wechat-qr.png" alt="WeChat QR" width="120" />
+            <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID: FLYkankou</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-box">
+        <h3>แบบฟอร์มติดต่อ</h3>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezLi5hGcaP8U-VPw6MPNnW5jn4hk0zFwA4O4hw2AiU_4M9Eg/viewform?embedded=true"
+                width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">
+          กำลังโหลด...
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 FLY Kanko สงวนลิขสิทธิ์
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const slider = document.getElementById("slider");
+
+    function moveSlide(step) {
+      currentIndex = (currentIndex + step + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
+    }
+
+    setInterval(() => moveSlide(1), 5000);
+  </script>
+
+  <link rel="stylesheet" href="flykankou-style.css">
+</body>
+</html>

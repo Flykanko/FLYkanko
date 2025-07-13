@@ -1,0 +1,719 @@
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.language-switcher {
+  text-align: right;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+.language-switcher a {
+  margin-left: 1rem;
+  color: #0070f3;
+  text-decoration: none;
+}
+.language-switcher a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+}
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+.slide h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.slide p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  background: white;
+  color: #005bbb;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.arrow.left {
+  left: 10px;
+}
+.arrow.right {
+  right: 10px;
+}
+
+.section {
+  padding: 4rem 1rem;
+  max-width: 1140px;
+  margin: auto;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contact-info p {
+  margin: 0.3rem 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.social-links img {
+  margin: 0 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* コンセプト動画と説明 */
+.concept-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+.concept-video {
+  flex: 1 1 600px;
+  max-width: 700px;
+}
+.concept-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+.concept-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.concept-video iframe {
+  width: 100%;
+  height: 420px;
+}
+
+/* ツアー写真 */
+.tour-photos {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.tour-photos img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* バス車両 */
+.fleet-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.fleet-item {
+  width: 220px;
+  text-align: center;
+}
+.fleet-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.8rem;
+}
+
+/* サービスボックス */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+.service-box {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  max-width: 250px;
+}
+.service-box img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .concept-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .concept-video, .concept-text {
+    max-width: 100%;
+  }
+  .concept-video iframe {
+    height: 240px;
+  }
+  .slide h1 {
+    font-size: 1.6rem;
+  }
+  .slide p {
+    font-size: 1rem;
+  }
+  nav {
+    display: none;
+  }
+  nav.open {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-info-box, .contact-form-box {
+  flex: 1 1 400px;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.contact-info-box h3,
+.contact-form-box h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #005bbb;
+}
+
+.contact-info-box p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* 表单内 iframe 高度在小屏时自适应 */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-info-box, .contact-form-box {
+    width: 100%;
+  }
+
+  .contact-form-box iframe {
+    height: 600px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.flow-container {
+  background: linear-gradient(to bottom right, #f0f8ff, #e0f0ff);
+  padding: 30px 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 128, 255, 0.2);
+  width: 95%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.flow-title {
+  color: #e3007f;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.flow-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.step {
+  background: #d0f0ff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 2px solid #0099ff;
+  font-weight: bold;
+  min-width: 100px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.step:hover {
+  transform: scale(1.05);
+}
+
+.step.done {
+  background: #fff94f;
+  border: 2px solid #ffcc00;
+  animation: pulse 1.2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.check {
+  font-size: 20px;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.5); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 204, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
+}
+
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+  
+.flow-note {
+  font-size: 14px;
+  color: #e3007f;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.bus-type-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.bus-card {
+  width: 220px;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.bus-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.bus-card h3 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.1rem;
+}
+
+.bus-card p {
+  color: #0070c0;
+  font-size: 0.95rem;
+}
+
+.bus-details-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.bus-detail-box {
+  flex: 1 1 400px;
+  max-width: 480px;
+  background: #f5faff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.bus-detail-box h4 {
+  margin-bottom: 0.8rem;
+  color: #003366;
+  font-size: 1.1rem;
+}
+
+.bus-detail-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.bus-detail-box p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+.spot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.spot-item {
+  width: 160px;
+  text-align: center;
+}
+
+
+.spot-item p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* 修改为排除 .fukuoka-tour-inline 区块 */
+.spot-gallery:not(.fukuoka-tour-inline) .spot-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.spot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+.spot-item-with-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.spot-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.spot-item.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  text-align: center;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.spot-item.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin: 0.8rem 0;
+}
+
+.card-title {
+  font-size: 1rem;
+  color: #005bbb;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.spot-item-with-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.spot-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #005bbb;
+  white-space: nowrap;
+}
+
+.spot-item-with-label .spot-item {
+  width: 140px;
+  text-align: center;
+}
+
+.spot-item-with-label img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.spot-item-with-label p {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+.fukuoka-tour-inline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ✅ 改为左对齐 */
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+
+.fukuoka-tour-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #005bbb;
+  white-space: nowrap;
+}
+.spot-gallery.fukuoka-tour-inline .spot-item img {
+  width: 220px !important;
+  height: 220px !important;
+  object-fit: cover;
+  border-radius: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+.fukuoka-tour-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap;
+}
+
+.fukuoka-tour-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #005bbb;
+  white-space: nowrap;
+}
+
+.fukuoka-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.fukuoka-gallery .spot-item img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.fukuoka-gallery .spot-item {
+  text-align: center;
+}
+/* 对英文页面中 Fukuoka / Kumamoto Day Trip 中图片强制正方形 */
+.spot-gallery.fukuoka-tour-inline .spot-item img,
+.spot-gallery.five-columns.fukuoka-tour-inline .spot-item img,
+.fukuoka-gallery .spot-item img {
+  width: 220px !important;
+  height: 220px !important;
+  object-fit: cover;
+  border-radius: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  display: block;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.fukuoka-tour-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap;
+}
+
+.fukuoka-tour-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #005bbb;
+  white-space: nowrap;
+}
+
+.fukuoka-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.fukuoka-gallery .spot-item img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.fukuoka-gallery .spot-item {
+  text-align: center;
+}
+
+.fukuoka-tour-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap;
+}
+
+.fukuoka-tour-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #005bbb;
+  white-space: nowrap;
+}
+
+.fukuoka-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.fukuoka-gallery .spot-item img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.fukuoka-gallery .spot-item {
+  text-align: center;
+}
+iframe {
+  background-color: black;
+}

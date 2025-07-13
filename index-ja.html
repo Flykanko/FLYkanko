@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>株式会社FLY観光 </title>
+  <link rel="stylesheet" href="flykankou-style.css">
+</head>
+<body>
+  <div class="language-switcher">
+  <a href="index-ja.html">日本語</a>
+  <a href="index-en.html">English</a>
+  <a href="index-zh.html">简体中文</a>
+  <a href="index-tw.html">繁體中文</a>
+  <a href="index-ko.html">한국어</a>
+    <a href="index-th.html">ภาษาไทย</a>
+
+</div>
+  <header>
+    <div class="header-container">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <img src="img/logo.png" alt="FLY観光ロゴ" style="height: 64px;" />
+        <h1>株式会社FLY観光</h1>
+      </div>
+    <nav>
+  <a href="#fleet">選べるバス車両</a>
+  <a href="#tour-examples">ツアーの例</a> <!-- ✅ 修复 -->
+  <a href="#use">用途に応じた例</a>
+  <a href="#flow">ご利用の流れ</a>
+  <a href="#contact">お問い合わせ</a>
+</nav>
+
+      <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+  <div class="slider-wrapper">
+    <div class="slider" id="slider">
+      <div class="slide" style="background-image: url('img/bus1.jpg');">
+        <h1>バスで行く！快適・安心・おトクな日帰り旅</h1>
+        <p>移ろう季節に、こころ和らぐ旅を。</p>
+        <a href="#contact" class="cta-button">お問い合わせ</a>
+      </div>
+      <div class="slide" style="background-image: url('img/bus2.jpg');"></div>
+      <div class="slide" style="background-image: url('img/bus3.jpg');"></div>
+      <div class="slide" style="background-image: url('img/bus4.jpg');"></div>
+    </div>
+    <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const slider = document.getElementById("slider");
+    function moveSlide(step) {
+      currentIndex = (currentIndex + step + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
+    }
+  </script>
+<script>
+  const translations = {
+    ja: {
+      concept: "コンセプト",
+      fleet: "選べるバス車両",
+      use: "用途に応じたご利用",
+      contact: "お問い合わせ・会社情報",
+      menu1: "コンセプト", menu2: "バス紹介", menu3: "利用案内", menu4: "お問い合わせ",
+    },
+    en: {
+      concept: "Concept",
+      fleet: "Bus Lineup",
+      use: "Use Cases",
+      contact: "Contact & Company Info",
+      menu1: "Concept", menu2: "Fleet", menu3: "Use", menu4: "Contact",
+    },
+    zh: {
+      concept: "公司理念",
+      fleet: "可选巴士车型",
+      use: "使用场景",
+      contact: "联系我们",
+      menu1: "理念", menu2: "车辆", menu3: "用途", menu4: "联系",
+    },
+    tw: {
+      concept: "公司理念",
+      fleet: "可選巴士車型",
+      use: "使用場景",
+      contact: "聯絡我們",
+      menu1: "理念", menu2: "車輛", menu3: "用途", menu4: "聯絡",
+    },
+  };
+  function switchLang(lang) {
+    const t = translations[lang];
+    if (!t) return;
+    document.querySelector('#concept h2').innerText = t.concept;
+    document.querySelector('#fleet h2').innerText = t.fleet;
+    document.querySelector('#use h2').innerText = t.use;
+    document.querySelector('#contact h2').innerText = t.contact;
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks[0].innerText = t.menu1;
+    navLinks[1].innerText = t.menu2;
+    navLinks[2].innerText = t.menu3;
+    navLinks[3].innerText = t.menu4;
+  }
+</script>
+</section>
+
+<section style="padding: 60px 20px; background-color: #f9f9f9;">
+  <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px;">
+    
+    <!-- 左：動画（尺寸加大） -->
+    <div style="flex: 1 1 60%; min-width: 320px;">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+        <iframe 
+          src="https://www.youtube.com/embed/KtxIbUpLUcc?rel=0" 
+          frameborder="0" 
+          allowfullscreen 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- 右：文章（文字缩小） -->
+    <div style="flex: 1 1 35%; min-width: 280px;">
+      <h2 style="font-size: 1.5rem; font-weight: bold; color: #111; margin-bottom: 12px;">
+       FBSに取材されて<br>
+       メディアの信頼、それはお客様の信頼
+      </h2>
+      <h3 style="font-size: 1rem; color: #666; margin-bottom: 20px;">
+        安心・快適な移動のすべてをFLY観光バスが支えます
+      </h3>
+      <p style="font-size: 0.9rem; line-height: 1.7; color: #333;">
+        テレビ取材を通じて、私たちFLY観光バスは、日々の運行における安全性・快適性への取り組みを広くご紹介いただきました。<br>
+        ドライバーの徹底した安全教育、厳格な整備基準、そしてお客様一人ひとりに寄り添ったサービス精神。<br>
+        私たちはただの「移動手段」ではなく、「信頼されるパートナー」として、お客様の旅の価値を高める存在を目指しています。<br>
+        社員一同、すべてのお客様に「また乗りたい」と思っていただけるよう、誠実に、丁寧に取り組んでいます。<br><br>
+        下記の映像では、実際の取材内容を通して、FLY観光の魅力や日々の努力をご覧いただけます。ぜひ最後までご覧ください。
+      </p>
+    </div>
+
+
+    
+  </div>
+</section>
+
+
+  </div>
+</section>
+
+  </div>
+</section>
+
+ <section class="section" id="tour-examples">
+  
+  <h2>ツアーの例</h2>
+<div class="tour-example-item" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; align-items: flex-start;">
+  <!-- 左边：大图 -->
+  <div style="flex: 1 1 50%;">
+    <img src="img/20.jpg" alt="大観峰の展望台" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+  </div>
+
+  <!-- 右边：三张小图 + 文本 -->
+  <div style="flex: 1 1 45%;">
+    <!-- 三张小图（带圆角） -->
+    <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+      <img src="img/22.jpg" alt="大観峰1" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      <img src="img/23.jpg" alt="大観峰2" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      <img src="img/24.jpg" alt="大観峰3" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    </div>
+
+    <!-- 标题与说明 -->
+    <h3>福冈絶景の旅</h3>
+    <p>阿蘇の雄大な自然を一望できる名所「大観峰」。絶景とともにリラックスした時間をお楽しみください。</p>
+  </div>
+</div>
+
+
+
+
+<div class="tour-example-item" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; align-items: flex-start; flex-direction: row-reverse;">
+  <!-- 右边：主图 -->
+  <div style="flex: 1 1 50%;">
+    <img src="img/21.jpg" alt="阿蘇の草原風景" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+  </div>
+
+  <!-- 左边：三张小图 + 说明文字 -->
+  <div style="flex: 1 1 45%;">
+    <!-- 三张小图（带圆角） -->
+    <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+      <img src="img/25.jpg" alt="草原1" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      <img src="img/26.jpg" alt="草原2" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      <img src="img/27.jpg" alt="草原3" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    </div>
+
+    <!-- 标题 + 文字说明 -->
+    <h3>熊本絶景の旅</h3>
+    <p>広大な草原に囲まれた阿蘇の風景は、日常を忘れる癒しの空間。心も体もリフレッシュ。</p>
+  </div>
+</div>
+
+
+<div class="fukuoka-tour-inline">
+  <div class="fukuoka-tour-text">福岡一日游</div>
+<div class="spot-gallery five-columns fukuoka-tour-inline">
+  <div class="spot-item">
+    <img src="img/15.jpg" alt="福岡観光マップ" />
+    <p>福岡観光マップ</p>
+  </div>
+  <div class="spot-item">
+    <img src="img/16.jpg" alt="宗像大社" />
+    <p>宗像大社</p>
+  </div>
+  <div class="spot-item">
+    <img src="img/17.jpg" alt="海の中道" />
+    <p>海の中道</p>
+  </div>
+  <div class="spot-item">
+    <img src="img/18.jpg" alt="太宰府天満宮" />
+    <p>太宰府天満宮</p>
+  </div>
+  <div class="spot-item">
+    <img src="img/19.jpg" alt="柳川川下り" />
+    <p>柳川川下り</p>
+  </div>
+</div>
+
+<div class="fukuoka-tour-inline">
+  <div class="fukuoka-tour-text">熊本一日游</div>
+<div class="spot-gallery five-columns fukuoka-tour-inline">
+  <div class="spot-item">
+    <img src="img/15.jpg" alt="福岡観光マップ" />
+    <p>福岡観光マップ</p>
+  </div>
+  <div class="spot-item">
+    <img src="img/16.jpg" alt="宗像大社" />
+    <p>宗像大社</p>
+  </div>
+  <div class="spot-item">
+    <img src="img/17.jpg" alt="海の中道" />
+    <p>海の中道</p>
+  </div>
+  <div class="spot-item">
+    <img src="img/18.jpg" alt="太宰府天満宮" />
+    <p>太宰府天満宮</p>
+  </div>
+  <div class="spot-item">
+    <img src="img/19.jpg" alt="柳川川下り" />
+    <p>柳川川下り</p>
+  </div>
+</div>
+
+
+
+<section class="section" id="fleet">
+  <h2 style="text-align: center; margin-bottom: 2rem;">選べるバス車両</h2>
+
+  <div class="bus-type-grid">
+  <div class="bus-card">
+    <img src="img/4.jpg" alt="大型バス" />
+    <h3>大型バス</h3>
+    <p>11台 / 60seat</p>
+  </div>
+  <div class="bus-card">
+    <img src="img/7.jpg" alt="中型バス" />
+    <h3>中型バス</h3>
+    <p>4台 / 40seat</p>
+  </div>
+  <div class="bus-card">
+    <img src="img/4.jpg" alt="マイクロバス" />
+    <h3>マイクロバス</h3>
+    <p>2台 / 25seat</p>
+  </div>
+  <div class="bus-card">
+    <img src="img/7.jpg" alt="ハイエース" />
+    <h3>ハイエース</h3>
+    <p>2台 / 10seat</p>
+  </div>
+</div>
+
+   <div class="bus-details-grid" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: stretch;">
+  <!-- 左：安心性を突き詰めた設計 -->
+  <div class="bus-detail-box">
+    <h4>安心性を突き詰めた設計</h4>
+    <img src="img/7.jpg" alt="バス内装1" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;" />
+    <p>
+      お客様の安全を第一に考え、全席にシートベルトを完備しています。<br>
+      日本語と中国語を話せるドライバーが乗車いたします。<br>
+      ご不明な点はお気軽にご相談ください。
+    </p>
+  </div>
+
+  <!-- 右：复制版（也是安心性を突き詰めた設計） -->
+  <div class="bus-detail-box">
+    <h4>安心性を突き詰めた設計</h4>
+    <img src="img/7.jpg" alt="バス内装2" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;" />
+    <p>
+      お客様の安全を第一に考え、全席にシートベルトを完備しています。<br>
+      日本語と中国語を話せるドライバーが乗車いたします。<br>
+      ご不明な点はお気軽にご相談ください。
+    </p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+
+</div>
+  </div>
+</section>
+
+<section class="section" id="use">
+  <h2>用途に応じた例</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <div style="position: relative;">
+        <img src="img/9.jpg" alt="観光ツアー・学校遠足" />
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">観光ツアー・学校遠足</div>
+      </div>
+      <p style="text-align: center; margin-top: 0.6rem;">快適な大型バスで楽しい旅を</p>
+    </div>
+
+    <div class="service-box">
+      <div style="position: relative;">
+        <img src="img/10.jpg" alt="企業・団体送迎" />
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">企業・団体送迎</div>
+      </div>
+      <p style="text-align: center; margin-top: 0.6rem;">定期便・貸切便に対応可能</p>
+    </div>
+
+    <div class="service-box">
+      <div style="position: relative;">
+        <img src="img/11.jpg" alt="イベント・展示会" />
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">イベント・展示会</div>
+      </div>
+      <p style="text-align: center; margin-top: 0.6rem;">人と機材を一緒に運搬</p>
+    </div>
+
+    <div class="service-box">
+      <div style="position: relative;">
+        <img src="img/12.jpg" alt="地域活動・福祉送迎" />
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">地域活動・福祉送迎</div>
+      </div>
+      <p style="text-align: center; margin-top: 0.6rem;">地元密着、柔軟な対応力</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="flow">
+<div class="flow-container">
+  <div class="flow-title">ご予約の流れ</div>
+  <div class="flow-steps">
+    <div class="step">お問合せ</div>
+    <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+
+    <div class="step">お見積り</div>
+    <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+
+    <div class="step">お申込み</div>
+    <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+
+    <div class="step">お振込み</div>
+    <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+
+    <div class="step done">
+      <span class="check">✅</span> 完了！
+    </div>
+  </div>
+  <div class="flow-note">
+    ※お見積の際は、<br class="mobile-break">ご利用予定日・人数・配車場所・行き先などの情報をお知らせください。
+  </div>
+</div>
+
+
+
+</section>
+
+
+ <section class="section" id="contact">
+  <h2>会社情報・お問い合わせ</h2>
+  <div class="contact-wrapper">
+    <!-- 左边：公司信息 -->
+    <div class="contact-info-box">
+      <h3>会社情報</h3>
+      <p><strong>株式会社FLY観光</strong></p>
+      <p>〒813-0023<br>福岡県福岡市東区蒲田4丁目5-53</p>
+      <p>TEL：092-519-0886<br>FAX：092-516-3414</p>
+      <p>熊本営業所：<br>熊本県菊池市泗水町吉富3201-4<br>エスポワール201号</p>
+      <p>Mail：flykankou@yahoo.co.jp/fly20250407@gmail.com</p>
+             
+
+<div style="display: flex; gap: 1.2rem; align-items: flex-start; margin-top: 1rem;">
+  <!-- LINE -->
+  <div style="text-align: center;">
+    <img src="img/line-qr.png" alt="LINE QRコード" width="120" />
+    <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID：fly20250407@gmail.com</p>
+  </div>
+  <!-- WeChat -->
+  <div style="text-align: center;">
+    <img src="img/wechat-qr.png" alt="WeChat QRコード" width="120" />
+    <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID：FLYkankou</p>
+  </div>
+</div>
+
+
+    </div>
+    
+
+    <!-- 右边：Google 表单嵌入 -->
+    <div class="contact-form-box">
+      <h3>お問い合わせフォーム</h3>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezLi5hGcaP8U-VPw6MPNnW5jn4hk0zFwA4O4hw2AiU_4M9Eg/viewform?embedded=true"
+              width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">
+        読み込んでいます…
+      </iframe>
+    </div>
+  </div>
+
+
+
+
+<footer>
+  &copy; 2025 株式会社FLY観光 All rights reserved.
+</footer>
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+  const slider = document.getElementById("slider");
+
+  function moveSlide(step) {
+    currentIndex = (currentIndex + step + slides.length) % slides.length;
+    slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
+  }
+
+  // 自動切り替え
+  setInterval(() => moveSlide(1), 5000);
+</script>
+<link rel="stylesheet" href="flykankou-style.css">
+</body>
+</html>

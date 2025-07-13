@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLY Kanko Co., Ltd.</title>
+  <link rel="stylesheet" href="flykankou-style.css">
+</head>
+<body>
+  <div class="language-switcher">
+    <a href="index-ja.html">日本語</a>
+    <a href="index-en.html">English</a>
+    <a href="index-zh.html">简体中文</a>
+    <a href="index-tw.html">繁體中文</a>
+    <a href="index-ko.html">한국어</a>
+    <a href="index-th.html">ภาษาไทย</a>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <img src="img/logo.png" alt="FLY Kanko Logo" style="height: 64px;" />
+        <h1>FLY Kanko </h1>
+      </div>
+      <nav>
+        <a href="#fleet">Bus Lineup</a>
+        <a href="#tour-examples">Tour Examples</a>
+        <a href="#use">Use Cases</a>
+        <a href="#flow">Booking Flow</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider-wrapper">
+      <div class="slider" id="slider">
+        <div class="slide" style="background-image: url('img/bus1.jpg');">
+          <h1>Comfortable, Safe, and Affordable Bus Trips</h1>
+          <p>Enjoy relaxing trips through the changing seasons.</p>
+          <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+        <div class="slide" style="background-image: url('img/bus2.jpg');"></div>
+        <div class="slide" style="background-image: url('img/bus3.jpg');"></div>
+        <div class="slide" style="background-image: url('img/bus4.jpg');"></div>
+      </div>
+      <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="section" id="tour-examples">
+  <h2>Tour Examples</h2>
+
+  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
+    <div style="flex: 1 1 50%;">
+      <img src="img/13.jpg" alt="Daikanbo Viewpoint" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    </div>
+    <div style="flex: 1 1 45%;">
+      <h3>Scenic Views at Daikanbo</h3>
+      <p>Daikanbo offers a stunning panoramic view of Aso’s majestic landscape. Enjoy a peaceful and relaxing time surrounded by nature.</p>
+    </div>
+  </div>
+
+  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; flex-direction: row-reverse;">
+    <div style="flex: 1 1 50%;">
+      <img src="img/14.jpg" alt="Aso Grasslands" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    </div>
+    <div style="flex: 1 1 45%;">
+      <h3>Healing Space in Vast Grasslands</h3>
+      <p>The expansive grasslands of Aso provide a relaxing escape from the everyday. Refresh both your body and soul in this serene environment.</p>
+    </div>
+  </div>
+
+ <div class="fukuoka-tour-group">
+  <div class="fukuoka-tour-label">Fukuoka Day Trip</div>
+  <div class="spot-gallery five-columns fukuoka-gallery">
+    <div class="spot-item"><img src="img/15.jpg" alt="Fukuoka Map" /><p>Fukuoka Map</p></div>
+    <div class="spot-item"><img src="img/16.jpg" alt="Munakata Taisha" /><p>Munakata Taisha</p></div>
+    <div class="spot-item"><img src="img/17.jpg" alt="Uminonakamichi" /><p>Uminonakamichi</p></div>
+    <div class="spot-item"><img src="img/18.jpg" alt="Dazaifu Tenmangu" /><p>Dazaifu Tenmangu</p></div>
+    <div class="spot-item"><img src="img/19.jpg" alt="Yanagawa Boat Tour" /><p>Yanagawa Boat Tour</p></div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="section" id="fleet">
+    <h2 style="text-align: center;">Bus Lineup</h2>
+    <div class="bus-type-grid">
+      <div class="bus-card">
+        <img src="img/4.jpg" alt="Large Bus" />
+        <h3>Large Bus</h3>
+        <p>11 units / 60 seats</p>
+      </div>
+      <div class="bus-card">
+        <img src="img/7.jpg" alt="Medium Bus" />
+        <h3>Medium Bus</h3>
+        <p>4 units / 40 seats</p>
+      </div>
+      <div class="bus-card">
+        <img src="img/4.jpg" alt="Microbus" />
+        <h3>Microbus</h3>
+        <p>2 units / 25 seats</p>
+      </div>
+      <div class="bus-card">
+        <img src="img/7.jpg" alt="Hiace Van" />
+        <h3>Hiace</h3>
+        <p>2 units / 10 seats</p>
+      </div>
+    </div>
+
+    <div class="bus-details-grid">
+      <div class="bus-detail-box">
+        <h4>Designed with Safety in Mind</h4>
+        <img src="img/7.jpg" alt="Bus Interior" />
+        <p>All seats are equipped with seatbelts, prioritizing customer safety.</p>
+      </div>
+      <div class="bus-detail-box">
+        <h4>Drivers Trained for Maximum Safety</h4>
+        <img src="img/8.jpg" alt="Driver" />
+        <p>Our drivers speak Japanese and Chinese. Feel free to ask any questions during your ride.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="use">
+    <h2>Use Cases</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <img src="img/9.jpg" alt="Sightseeing" />
+        <p>Sightseeing / School Trips</p>
+      </div>
+      <div class="service-box">
+        <img src="img/10.jpg" alt="Corporate Transport" />
+        <p>Corporate / Group Transport</p>
+      </div>
+      <div class="service-box">
+        <img src="img/11.jpg" alt="Events" />
+        <p>Events & Exhibitions</p>
+      </div>
+      <div class="service-box">
+        <img src="img/12.jpg" alt="Community" />
+        <p>Community & Welfare</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="flow">
+    <div class="flow-container">
+      <h2>Booking Flow</h2>
+      <div class="flow-steps">
+        <div class="step">Inquiry</div>
+        <div class="step">Quotation</div>
+        <div class="step">Application</div>
+        <div class="step">Payment</div>
+        <div class="step done">✅ Complete!</div>
+      </div>
+      <p class="flow-note">Please let us know your desired date, number of people, pickup location, and destination.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact & Company Info</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info-box">
+        <h3>Company Info</h3>
+        <p><strong>FLY Kanko Co., Ltd.</strong></p>
+        <p>4-5-53 Kamata, Higashi-ku, Fukuoka 813-0023</p>
+        <p>TEL: 092-519-0886 / FAX: 092-516-3414</p>
+        <p>MAIL: flykankou@yahoo.co.jp</p>
+        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+          <div style="text-align: center;">
+            <img src="img/line-qr.png" width="100" alt="LINE QR" />
+            <p>LINE ID: fly20250407@gmail.com</p>
+          </div>
+          <div style="text-align: center;">
+            <img src="img/wechat-qr.png" width="100" alt="WeChat QR" />
+            <p>WeChat ID: FLYkankou</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-box">
+        <h3>Contact Form</h3>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezLi5hGcaP8U-VPw6MPNnW5jn4hk0zFwA4O4hw2AiU_4M9Eg/viewform?embedded=true" width="100%" height="600" frameborder="0">Loading…</iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 FLY Kanko Co., Ltd. All rights reserved.
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const slider = document.getElementById("slider");
+    function moveSlide(step) {
+      currentIndex = (currentIndex + step + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
+    }
+    setInterval(() => moveSlide(1), 5000);
+  </script>
+</body>
+</html>
