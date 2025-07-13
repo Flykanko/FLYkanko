@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://flykanko.github.io/FLYkanko/sitemap.xml

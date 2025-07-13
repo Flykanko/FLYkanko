@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 首页 -->
+  <url>
+    <loc>https://flykanko.github.io/FLYkanko/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 以下根据你网站的实际页面补充 -->
+  <url>
+    <loc>https://flykanko.github.io/FLYkanko/recruit.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flykanko.github.io/FLYkanko/qa.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flykanko.github.io/FLYkanko/usecase.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flykanko.github.io/FLYkanko/contact.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
