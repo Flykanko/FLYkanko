@@ -717,3 +717,92 @@ html {
 iframe {
   background-color: black;
 }
+/* お問い合わせフォーム美化 */
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-form label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.2rem;
+}
+
+.custom-form input,
+.custom-form select,
+.custom-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.custom-form input:focus,
+.custom-form select:focus,
+.custom-form textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.custom-form button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-form button:hover {
+  background-color: #005bbb;
+}
+.contact-table-form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-table-form th {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem;
+  background: #f0f8ff;
+  color: #005bbb;
+  width: 30%;
+}
+
+.contact-table-form td {
+  padding: 0.6rem;
+}
+
+.contact-table-form input,
+.contact-table-form select,
+.contact-table-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.contact-table-form button {
+  background-color: #0070f3;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-table-form button:hover {
+  background-color: #005bbb;
+}

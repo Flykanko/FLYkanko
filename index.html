@@ -381,48 +381,87 @@
 
 </section>
 
-
- <section class="section" id="contact">
+<section class="section" id="contact">
   <h2>会社情報・お問い合わせ</h2>
   <div class="contact-wrapper">
-    <!-- 左边：公司信息 -->
+    <!-- 左侧：会社情報 -->
     <div class="contact-info-box">
       <h3>会社情報</h3>
       <p><strong>株式会社FLY観光</strong></p>
       <p>〒813-0023<br>福岡県福岡市東区蒲田4丁目5-53</p>
       <p>TEL：092-519-0886<br>FAX：092-516-3414</p>
-      <p>熊本営業所：<br>熊本県菊池市泗水町吉富3201-4<br>エスポワール201号</p>
-      <p>Mail：flykankou@yahoo.co.jp/fly20250407@gmail.com</p>
-             
 
-<div style="display: flex; gap: 1.2rem; align-items: flex-start; margin-top: 1rem;">
-  <!-- LINE -->
-  <div style="text-align: center;">
-    <img src="img/line-qr.png" alt="LINE QRコード" width="120" />
-    <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID：fly20250407@gmail.com</p>
-  </div>
-  <!-- WeChat -->
-  <div style="text-align: center;">
-    <img src="img/wechat-qr.png" alt="WeChat QRコード" width="120" />
-    <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID：FLYkankou</p>
-  </div>
-</div>
+      <p><strong>本社（松島）</strong><br>
+      福岡市東区松島3丁目13-8-401</p>
 
+      <p><strong>熊本営業所</strong><br>
+      熊本県菊池市泗水町吉富3201-4<br>
+      エスポワール201号室<br>
+      熊本FAX：0968-41-8706</p>
 
+      <p><strong>メール</strong><br>
+      flykankou@yahoo.co.jp</p>
+
+      <div class="social-links">
+        <div style="text-align: center;">
+          <img src="img/line-qr.png" alt="LINE QRコード" width="120" />
+          <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID：fly20250407@gmail.com</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="img/wechat-qr.png" alt="WeChat QRコード" width="120" />
+          <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID：FLYkankou</p>
+        </div>
+      </div>
     </div>
-    
 
-    <!-- 右边：Google 表单嵌入 -->
+    <!-- 右侧：お問い合わせフォーム -->
     <div class="contact-form-box">
       <h3>お問い合わせフォーム</h3>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezLi5hGcaP8U-VPw6MPNnW5jn4hk0zFwA4O4hw2AiU_4M9Eg/viewform?embedded=true"
-              width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">
-        読み込んでいます…
-      </iframe>
+      <form action="https://formspree.io/f/xpwlajep" method="POST" class="contact-table-form">
+        <input type="hidden" name="_subject" value="FLY観光 お問い合わせフォームからの送信">
+        <input type="hidden" name="_next" value="https://flykanko.github.io/thanks.html">
+
+        <table>
+          <tr>
+            <th><label for="name">お名前</label></th>
+            <td><input type="text" name="name" id="name" required></td>
+          </tr>
+          <tr>
+            <th><label for="email">メールアドレス</label></th>
+            <td><input type="email" name="email" id="email" required></td>
+          </tr>
+          <tr>
+            <th><label for="subject">お問い合わせの種類</label></th>
+            <td>
+              <select name="subject" id="subject" required>
+                <option value="">選択してください</option>
+                <option value="お見積り">お見積り</option>
+                <option value="ご予約">ご予約</option>
+                <option value="その他">その他</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="tel">電話番号</label></th>
+            <td><input type="tel" name="phone" id="tel" required></td>
+          </tr>
+          <tr>
+            <th><label for="date">予約予定日</label></th>
+            <td><input type="date" name="date" id="date" required></td>
+          </tr>
+          <tr>
+            <th><label for="message">お問い合わせ内容</label></th>
+            <td><textarea name="message" id="message" rows="6" required></textarea></td>
+          </tr>
+        </table>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button type="submit">送信する</button>
+        </div>
+      </form>
     </div>
   </div>
-
-
+</section>
 
 
 <footer>
