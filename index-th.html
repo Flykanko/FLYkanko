@@ -19,7 +19,7 @@
   <header>
     <div class="header-container">
       <div style="display: flex; align-items: center; gap: 1rem;">
-        <img src="logo.png" alt="FLY観光ロゴ" style="height: 64px;" />
+        <img src="img/logo.png" alt="FLY Kanko Logo" style="height: 64px;" />
         <h1>FLY Kanko</h1>
       </div>
       <nav>
@@ -36,14 +36,14 @@
   <section class="hero">
     <div class="slider-wrapper">
       <div class="slider" id="slider">
-        <div class="slide" style="background-image: url('bus1.jpg');">
+        <div class="slide" style="background-image: url('img/bus1.jpg');">
           <h1>เดินทางด้วยรถบัส! สะดวก สบาย และคุ้มค่า</h1>
           <p>เพลิดเพลินกับการเดินทางท่ามกลางฤดูกาลที่เปลี่ยนไป</p>
           <a href="#contact" class="cta-button">ติดต่อเรา</a>
         </div>
-        <div class="slide" style="background-image: url('bus2.jpg');"></div>
-        <div class="slide" style="background-image: url('bus3.jpg');"></div>
-        <div class="slide" style="background-image: url('bus4.jpg');"></div>
+        <div class="slide" style="background-image: url('img/bus2.jpg');"></div>
+        <div class="slide" style="background-image: url('img/bus3.jpg');"></div>
+        <div class="slide" style="background-image: url('img/bus4.jpg');"></div>
       </div>
       <button class="arrow left" onclick="moveSlide(-1)">❮</button>
       <button class="arrow right" onclick="moveSlide(1)">❯</button>
@@ -57,11 +57,9 @@
           <iframe src="https://www.youtube.com/embed/KtxIbUpLUcc?rel=0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
         </div>
       </div>
-
       <div style="flex: 1 1 35%; min-width: 280px;">
         <h2 style="font-size: 1.5rem; font-weight: bold; color: #111; margin-bottom: 12px;">
-          แนะนำโดย FBS<br>
-          ความไว้วางใจจากสื่อ คือ ความมั่นใจจากลูกค้า
+          แนะนำโดย FBS<br>ความไว้วางใจจากสื่อ คือ ความมั่นใจจากลูกค้า
         </h2>
         <h3 style="font-size: 1rem; color: #666; margin-bottom: 20px;">
           FLY Kanko สนับสนุนทุกการเดินทางอย่างปลอดภัยและสะดวกสบาย
@@ -76,130 +74,218 @@
     </div>
   </section>
 
+  <!-- ตัวอย่างทัวร์ -->
   <section class="section" id="tour-examples">
     <h2>ตัวอย่างทัวร์</h2>
-    <p class="center-text">
-      ตัวอย่างทัวร์แบบไปเช้าเย็นกลับสู่พื้นที่คุมาโมโตะและอาโสะ<br>
-      ธรรมชาติอุดมสมบูรณ์ วิวสวย พร้อมบริการรับส่งปลอดภัย
-    </p>
-    <div class="tour-photos">
-      <img src="1.jpg" alt="ภูเขา" />
-      <img src="2.jpg" alt="ทุ่งหญ้าอาโสะ" />
+    <div class="tour-example-item" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; align-items: flex-start;">
+      <div style="flex: 1 1 50%;">
+        <img src="img/20.jpg" alt="ภูเขา" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      </div>
+      <div style="flex: 1 1 45%;">
+        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+          <img src="img/22.jpg" alt="จุดชมวิว 1" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+          <img src="img/23.jpg" alt="จุดชมวิว 2" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+          <img src="img/24.jpg" alt="จุดชมวิว 3" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+        </div>
+        <h3>ทัวร์ชมวิวที่ฟุกุโอกะ</h3>
+        <p>เพลิดเพลินกับทัศนียภาพอันยิ่งใหญ่ของภูเขาอาโสะจากจุดชมวิวชื่อดัง พร้อมบรรยากาศผ่อนคลายตลอดการเดินทาง</p>
+      </div>
+    </div>
+
+    <div class="tour-example-item" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; align-items: flex-start; flex-direction: row-reverse;">
+      <div style="flex: 1 1 50%;">
+        <img src="img/21.jpg" alt="ทุ่งหญ้า" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      </div>
+      <div style="flex: 1 1 45%;">
+        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+          <img src="img/25.jpg" alt="ทุ่งหญ้า 1" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+          <img src="img/26.jpg" alt="ทุ่งหญ้า 2" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+          <img src="img/27.jpg" alt="ทุ่งหญ้า 3" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+        </div>
+        <h3>ธรรมชาติบำบัดที่คุมาโมโตะ</h3>
+        <p>สัมผัสความสงบท่ามกลางทุ่งหญ้าเขียวขจีของอาโสะ เติมเต็มความสดชื่นให้ทั้งร่างกายและจิตใจ</p>
+      </div>
     </div>
   </section>
-
   <section class="section" id="fleet">
-    <h2 style="text-align: center; margin-bottom: 2rem;">รถโดยสารที่คุณเลือกได้</h2>
-    <div class="bus-type-grid">
-      <div class="bus-card">
-        <img src="4.jpg" alt="รถบัสขนาดใหญ่" />
-        <h3>รถบัสขนาดใหญ่</h3>
-        <p>11 คัน / 60 ที่นั่ง</p>
-      </div>
-      <div class="bus-card">
-        <img src="7.jpg" alt="รถบัสขนาดกลาง" />
-        <h3>รถบัสขนาดกลาง</h3>
-        <p>4 คัน / 40 ที่นั่ง</p>
-      </div>
-      <div class="bus-card">
-        <img src="4.jpg" alt="ไมโครบัส" />
-        <h3>ไมโครบัส</h3>
-        <p>2 คัน / 25 ที่นั่ง</p>
-      </div>
-      <div class="bus-card">
-        <img src="7.jpg" alt="ไฮเอซ" />
-        <h3>ไฮเอซ</h3>
-        <p>2 คัน / 10 ที่นั่ง</p>
-      </div>
+  <h2 style="text-align: center; margin-bottom: 2rem;">รถโดยสารที่คุณเลือกได้</h2>
+
+  <div class="bus-type-grid">
+    <div class="bus-card">
+      <img src="img/4.jpg" alt="รถบัสขนาดใหญ่" />
+      <h3>รถบัสขนาดใหญ่</h3>
+      <p>11 คัน / 60 ที่นั่ง</p>
+    </div>
+    <div class="bus-card">
+      <img src="img/7.jpg" alt="รถบัสขนาดกลาง" />
+      <h3>รถบัสขนาดกลาง</h3>
+      <p>4 คัน / 40 ที่นั่ง</p>
+    </div>
+    <div class="bus-card">
+      <img src="img/4.jpg" alt="ไมโครบัส" />
+      <h3>ไมโครบัส</h3>
+      <p>2 คัน / 25 ที่นั่ง</p>
+    </div>
+    <div class="bus-card">
+      <img src="img/7.jpg" alt="ไฮเอซ" />
+      <h3>ไฮเอซ</h3>
+      <p>2 คัน / 10 ที่นั่ง</p>
+    </div>
+  </div>
+
+  <div class="bus-details-grid">
+    <div class="bus-detail-box">
+      <h4>ออกแบบเพื่อความปลอดภัยสูงสุด</h4>
+      <img src="img/7.jpg" alt="ภายในรถ" />
+      <p>
+        เราคำนึงถึงความปลอดภัยเป็นอันดับแรก<br>
+        ที่นั่งทุกที่มีเข็มขัดนิรภัยครบครัน<br>
+        พนักงานขับรถสามารถสื่อสารภาษาญี่ปุ่นและจีนได้
+      </p>
     </div>
 
-    <div class="bus-details-grid">
-      <div class="bus-detail-box">
-        <h4>การออกแบบที่มุ่งเน้นความปลอดภัย</h4>
-        <img src="7.jpg" alt="ภายในรถ" />
-        <p>ติดตั้งเข็มขัดนิรภัยครบทุกที่นั่งเพื่อความปลอดภัยของคุณ</p>
-      </div>
-      <div class="bus-detail-box">
-        <h4>พนักงานขับที่เน้นความปลอดภัย</h4>
-        <img src="7.jpg" alt="คนขับ" />
-        <p>พูดภาษาญี่ปุ่นและจีนได้ หากมีคำถามสามารถสอบถามได้</p>
-      </div>
+    <div class="bus-detail-box">
+      <h4>ออกแบบเพื่อความปลอดภัยสูงสุด</h4>
+      <img src="img/7.jpg" alt="ภายในรถ" />
+      <p>
+        เราคำนึงถึงความปลอดภัยเป็นอันดับแรก<br>
+        ที่นั่งทุกที่มีเข็มขัดนิรภัยครบครัน<br>
+        พนักงานขับรถสามารถสื่อสารภาษาญี่ปุ่นและจีนได้
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="flow">
-    <div class="flow-container">
-      <div class="flow-title">ขั้นตอนการจอง</div>
-      <div class="flow-steps">
-        <div class="step">สอบถาม</div>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
-        <div class="step">ขอใบเสนอราคา</div>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
-        <div class="step">ยืนยันการจอง</div>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
-        <div class="step">ชำระเงิน</div>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
-        <div class="step done">
-          <span class="check">✅</span> เสร็จสมบูรณ์！
+<section class="section" id="use">
+  <h2>การใช้งานตามวัตถุประสงค์</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <div style="position: relative;">
+        <img src="img/9.jpg" alt="ทัศนศึกษา / ท่องเที่ยว" />
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">ทัศนศึกษา / ท่องเที่ยว</div>
+      </div>
+      <p style="text-align: center; margin-top: 0.6rem;">เดินทางด้วยรถบัสขนาดใหญ่ที่สะดวกสบาย</p>
+    </div>
+
+    <div class="service-box">
+      <div style="position: relative;">
+        <img src="img/10.jpg" alt="รับส่งพนักงาน / กลุ่มองค์กร" />
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">รับส่งพนักงาน / กลุ่มองค์กร</div>
+      </div>
+      <p style="text-align: center; margin-top: 0.6rem;">รองรับทั้งบริการรายวันและเหมาคัน</p>
+    </div>
+
+    <div class="service-box">
+      <div style="position: relative;">
+        <img src="img/11.jpg" alt="กิจกรรม / นิทรรศการ" />
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">กิจกรรม / นิทรรศการ</div>
+      </div>
+      <p style="text-align: center; margin-top: 0.6rem;">ขนส่งทั้งผู้โดยสารและอุปกรณ์พร้อมกัน</p>
+    </div>
+
+    <div class="service-box">
+      <div style="position: relative;">
+        <img src="img/12.jpg" alt="ชุมชน / บริการสาธารณะ" />
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">ชุมชน / บริการสาธารณะ</div>
+      </div>
+      <p style="text-align: center; margin-top: 0.6rem;">ตอบสนองความต้องการท้องถิ่นด้วยความยืดหยุ่น</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="flow">
+  <div class="flow-container">
+    <div class="flow-title">ขั้นตอนการจอง</div>
+    <div class="flow-steps">
+      <div class="step">สอบถาม</div>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+      <div class="step">ขอใบเสนอราคา</div>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+      <div class="step">ยืนยันการจอง</div>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+      <div class="step">ชำระเงิน</div>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+      <div class="step done"><span class="check">✅</span> เสร็จสมบูรณ์！</div>
+    </div>
+    <div class="flow-note">
+      ※ กรุณาแจ้งข้อมูล เช่น วันที่เดินทาง จำนวนผู้โดยสาร สถานที่รับ-ส่ง และจุดหมายปลายทาง
+    </div>
+  </div>
+</section>
+<section class="section" id="contact">
+  <h2>ติดต่อบริษัท / ข้อมูล</h2>
+  <div class="contact-wrapper">
+    <div class="contact-info-box">
+      <h3>ข้อมูลบริษัท</h3>
+      <p><strong>FLY Kanko</strong></p>
+      <p>〒813-0023<br>4-5-53 Kamata, Higashi-ku, Fukuoka</p>
+      <p>โทร: 092-519-0886<br>แฟกซ์: 092-516-3414</p>
+      <p>สำนักงานใหญ่ (Matsushima):<br>3-13-8-401 Matsushima, Higashi-ku, Fukuoka</p>
+      <p>สาขาคุมาโมโตะ:<br>3201-4 Yoshitomi, Kikuchi-shi, Kumamoto<br>ห้อง 201</p>
+      <p>แฟกซ์ (คุมาโมโตะ): 0968-41-8706</p>
+      <p>อีเมล: flykankou@yahoo.co.jp</p>
+
+      <div class="social-links">
+        <div style="text-align: center;">
+          <img src="img/line-qr.png" alt="LINE QR" width="120" />
+          <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID: fly20250407@gmail.com</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="img/wechat-qr.png" alt="WeChat QR" width="120" />
+          <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID: FLYkankou</p>
         </div>
       </div>
-      <div class="flow-note">
-        ※ กรุณาแจ้งข้อมูล เช่น วันที่เดินทาง จำนวนผู้โดยสาร สถานที่รับ-ส่ง และจุดหมายปลายทาง
-      </div>
     </div>
-  </section>
-  <section class="section" id="contact">
-    <h2>ติดต่อบริษัท / ข้อมูล</h2>
-    <div class="contact-wrapper">
-      <div class="contact-info-box">
-        <h3>ข้อมูลบริษัท</h3>
-        <p><strong>FLY Kanko</strong></p>
-        <p>〒813-0023<br>4-5-53 Kamata, Higashi-ku, Fukuoka-shi, Fukuoka</p>
-        <p>โทร: 092-519-0886<br>แฟกซ์: 092-516-3414</p>
-        <p>สำนักงานใหญ่ (Matsushima):<br>3-13-8-401 Matsushima, Higashi-ku, Fukuoka</p>
-        <p>สาขาคุมาโมโตะ:<br>3201-4 Yoshitomi, Kikuchi-shi, Kumamoto<br>ห้อง 201</p>
-        <p>แฟกซ์ (คุมาโมโตะ): 0968-41-8706</p>
-        <p>อีเมล: flykankou@yahoo.co.jp</p>
 
-        <div style="display: flex; gap: 1.2rem; align-items: flex-start; margin-top: 1rem;">
-          <div style="text-align: center;">
-            <img src="line-qr.png" alt="LINE QR" width="120" />
-            <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID: fly20250407@gmail.com</p>
-          </div>
-          <div style="text-align: center;">
-            <img src="wechat-qr.png" alt="WeChat QR" width="120" />
-            <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID: FLYkankou</p>
-          </div>
+    <div class="contact-form-box">
+      <h3>แบบฟอร์มติดต่อ</h3>
+      <form action="https://formspree.io/f/xpwlajep" method="POST" class="contact-table-form">
+        <input type="hidden" name="_subject" value="แบบฟอร์มติดต่อจากเว็บไซต์ FLY Kanko">
+        <input type="hidden" name="_next" value="https://flykanko.github.io/thanks.html">
+
+        <table>
+          <tr><th><label for="name">ชื่อ</label></th><td><input type="text" name="name" id="name" required></td></tr>
+          <tr><th><label for="email">อีเมล</label></th><td><input type="email" name="email" id="email" required></td></tr>
+          <tr>
+            <th><label for="subject">ประเภทการติดต่อ</label></th>
+            <td>
+              <select name="subject" id="subject" required>
+                <option value="">กรุณาเลือก</option>
+                <option value="ขอใบเสนอราคา">ขอใบเสนอราคา</option>
+                <option value="จองบริการ">จองบริการ</option>
+                <option value="อื่น ๆ">อื่น ๆ</option>
+              </select>
+            </td>
+          </tr>
+          <tr><th><label for="phone">เบอร์โทร</label></th><td><input type="tel" name="phone" id="phone" required></td></tr>
+          <tr><th><label for="date">วันที่เดินทาง</label></th><td><input type="date" name="date" id="date" required></td></tr>
+          <tr><th><label for="message">รายละเอียด</label></th><td><textarea name="message" id="message" rows="6" required></textarea></td></tr>
+        </table>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button type="submit">ส่งข้อความ</button>
         </div>
-      </div>
-
-      <div class="contact-form-box">
-        <h3>แบบฟอร์มติดต่อ</h3>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezLi5hGcaP8U-VPw6MPNnW5jn4hk0zFwA4O4hw2AiU_4M9Eg/viewform?embedded=true"
-                width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">
-          กำลังโหลด...
-        </iframe>
-      </div>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 FLY Kanko สงวนลิขสิทธิ์
-  </footer>
+<footer>
+  &copy; 2025 FLY Kanko สงวนลิขสิทธิ์
+</footer>
 
-  <script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll(".slide");
-    const slider = document.getElementById("slider");
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+  const slider = document.getElementById("slider");
 
-    function moveSlide(step) {
-      currentIndex = (currentIndex + step + slides.length) % slides.length;
-      slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
-    }
+  function moveSlide(step) {
+    currentIndex = (currentIndex + step + slides.length) % slides.length;
+    slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
+  }
 
-    setInterval(() => moveSlide(1), 5000);
-  </script>
-
-  <link rel="stylesheet" href="flykankou-style.css">
+  setInterval(() => moveSlide(1), 5000);
+</script>
 </body>
 </html>
+
