@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FLY觀光股份有限公司</title>
+  <title>FLY觀光股份有限公司 | 九州包車・觀光巴士</title>
+  <meta name="description" content="FLY觀光主要提供九州地區的包車與觀光巴士服務。可從福岡、熊本、大分等地出發，讓您享有安心與舒適的巴士旅程。">
+  <meta name="keywords" content="福岡, 観光巴士, 包車, 九州, FLY觀光, 團體旅遊, 校外教學, 活動接送">
   <link rel="stylesheet" href="flykankou-style.css" />
-  <style>
-    .language-switcher a[href*="index-tw.html"] {
-      font-weight: bold;
-      color: #e3007f;
-    }
-  </style>
 </head>
 <body>
   <div class="language-switcher">
     <a href="index.html">日本語</a>
     <a href="index-en.html">English</a>
     <a href="index-zh.html">简体中文</a>
-    <a href="index-tw.html">繁體中文</a>
+    <a href="index-tw.html" style="font-weight: bold; color: #e3007f;">繁體中文</a>
     <a href="index-ko.html">한국어</a>
     <a href="index-th.html">ภาษาไทย</a>
   </div>
@@ -26,11 +22,12 @@
     <div class="header-container">
       <div style="display: flex; align-items: center; gap: 1rem;">
         <img src="img/logo.png" alt="FLY觀光LOGO" style="height: 64px;" />
-        <h1>FLY觀光</h1>
+        <h1>FLY觀光股份有限公司</h1>
       </div>
       <nav>
         <a href="#fleet">巴士車型</a>
         <a href="#tour-examples">旅遊範例</a>
+        <a href="#recruit">徵才資訊</a>
         <a href="#use">使用場景</a>
         <a href="#flow">預約流程</a>
         <a href="#contact">聯絡我們</a>
@@ -43,16 +40,16 @@
     <div class="slider-wrapper">
       <div class="slider" id="slider">
         <div class="slide" style="background-image: url('img/bus1.jpg');">
-          <h1>舒適、安全又划算的一日巴士之旅</h1>
-          <p>享受隨季節變化的療癒之旅</p>
+          <h1>搭乘巴士出發！舒適、安全又超值的一日行程</h1>
+          <p>在四季變化中享受身心療癒的旅程</p>
           <a href="#contact" class="cta-button">聯絡我們</a>
         </div>
         <div class="slide" style="background-image: url('img/bus2.jpg');"></div>
         <div class="slide" style="background-image: url('img/bus3.jpg');"></div>
         <div class="slide" style="background-image: url('img/bus4.jpg');"></div>
       </div>
-      <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+      <button class="arrow left" onclick="moveSlide(-1)">❮</button>
+      <button class="arrow right" onclick="moveSlide(1)">❯</button>
     </div>
   </section>
 
@@ -65,17 +62,17 @@
       </div>
       <div style="flex: 1 1 35%; min-width: 280px;">
         <h2 style="font-size: 1.5rem; font-weight: bold; color: #111; margin-bottom: 12px;">
-          媒體信任的選擇，也是顧客的首選
+          媒體信賴推薦<br>也是顧客選擇的保證
         </h2>
         <h3 style="font-size: 1rem; color: #666; margin-bottom: 20px;">
-          FLY觀光用心守護您的每一次出行
+          FLY觀光致力於守護每一段安全舒適的旅程
         </h3>
         <p style="font-size: 0.9rem; line-height: 1.7; color: #333;">
-          透過媒體報導，我們展示了對安全與舒適營運的承諾。<br>
-          所有駕駛員皆經嚴格培訓，車輛經過嚴密保養，並提供貼心服務。<br>
-          我們不只是交通工具，更希望成為您旅程中的可信賴夥伴。<br><br>
-          全體同仁致力於讓每位顧客感受到「還想再乘坐」的真誠服務。<br><br>
-          歡迎點選下方影片，感受FLY觀光的魅力與努力！
+          FLY觀光曾在電視媒體報導中介紹我們在日常營運中對「安全與舒適」的堅持。<br>
+          所有司機皆接受嚴格的安全訓練，車輛皆經過高標準保養，並以服務精神用心對待每位乘客。<br>
+          我們不只是單純的「交通工具」，更是提升您旅程價值的「值得信賴的夥伴」。<br>
+          全體員工皆以誠懇、細心的態度，讓每一位乘客都願意再次選擇我們。<br><br>
+          歡迎觀看下方影片，深入了解 FLY觀光的熱忱與用心。
         </p>
       </div>
     </div>
@@ -83,124 +80,210 @@
 <section class="section" id="tour-examples">
   <h2>旅遊範例</h2>
 
-  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
+  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; align-items: flex-start;">
     <div style="flex: 1 1 50%;">
-      <img src="img/13.jpg" alt="大觀峰展望台" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      <img src="img/20.jpg" alt="大觀峰展望台" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;" />
     </div>
     <div style="flex: 1 1 45%;">
-      <h3>大觀峰壯麗景觀</h3>
-      <p>阿蘇的著名景點「大觀峰」，盡覽雄偉自然，享受放鬆時光。</p>
+      <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+        <img src="img/22.jpg" alt="景點1" style="width: 30%; border-radius: 8px;" />
+        <img src="img/23.jpg" alt="景點2" style="width: 30%; border-radius: 8px;" />
+        <img src="img/24.jpg" alt="景點3" style="width: 30%; border-radius: 8px;" />
+      </div>
+      <h3>九州絕景推薦</h3>
+      <p>元乃隅稻成神社－柳川－糸島－高千穗峽</p>
+      <p style="font-size: 0.95rem; line-height: 1.6;">
+        一天玩遍自然與文化。從紅色鳥居映照海面的元乃隅神社，到柳川的船遊，糸島的海邊咖啡，最後是壯麗神秘的高千穗峽。<br>
+        <strong>→ 令人身心煥然一新的感動絕景行程。</strong>
+      </p>
     </div>
   </div>
 
-  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; flex-direction: row-reverse; margin-bottom: 3rem;">
+  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; flex-direction: row-reverse; align-items: flex-start;">
     <div style="flex: 1 1 50%;">
-      <img src="img/14.jpg" alt="阿蘇草原風景" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      <img src="img/21.jpg" alt="阿蘇草原風景" style="width: 100%; border-radius: 8px;" />
     </div>
     <div style="flex: 1 1 45%;">
-      <h3>遼闊草原中的療癒空間</h3>
-      <p>阿蘇地區被廣大草原包圍，營造出療癒與放鬆的環境。</p>
-    </div>
-  </div>
-
-  <div class="fukuoka-tour-inline">
-    <div class="fukuoka-tour-text">福岡一日遊</div>
-    <div class="spot-gallery five-columns fukuoka-tour-inline">
-      <div class="spot-item"><img src="img/15.jpg" alt="福岡地圖" /><p>福岡地圖</p></div>
-      <div class="spot-item"><img src="img/16.jpg" alt="宗像大社" /><p>宗像大社</p></div>
-      <div class="spot-item"><img src="img/17.jpg" alt="海之中道" /><p>海之中道</p></div>
-      <div class="spot-item"><img src="img/18.jpg" alt="太宰府天滿宮" /><p>太宰府天滿宮</p></div>
-      <div class="spot-item"><img src="img/19.jpg" alt="柳川遊船" /><p>柳川遊船</p></div>
+      <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+        <img src="img/25.jpg" alt="草原1" style="width: 30%; border-radius: 8px;" />
+        <img src="img/26.jpg" alt="草原2" style="width: 30%; border-radius: 8px;" />
+        <img src="img/27.jpg" alt="草原3" style="width: 30%; border-radius: 8px;" />
+      </div>
+      <h3>壯闊自然與神秘景點巡禮</h3>
+      <p>阿蘇火山－角島大橋－上色見熊野座神社</p>
+      <p style="font-size: 0.95rem; line-height: 1.6;">
+        遊覽九州的壯麗景色。從阿蘇的廣闊草原與冒煙火山、碧藍海上的角島大橋，到靜謐神聖的上色見熊野座神社。<br>
+        <strong>→ 非日常體驗、戲劇性風景連發的推薦路線。</strong>
+      </p>
     </div>
   </div>
 </section>
 
-
-  <section class="section" id="use">
-    <h2>使用場景</h2>
-    <div class="service-grid">
-      <div class="service-box">
-        <img src="img/9.jpg" alt="觀光/校外教學" />
-        <p><strong>觀光/校外教學</strong><br>寬敞舒適的大型巴士陪您出遊</p>
-      </div>
-      <div class="service-box">
-        <img src="img/10.jpg" alt="企業/團體接送" />
-        <p><strong>企業/團體接送</strong><br>可對應定期班車及包車需求</p>
-      </div>
-      <div class="service-box">
-        <img src="img/11.jpg" alt="活動/展覽運輸" />
-        <p><strong>活動/展覽</strong><br>人員與器材可一併運輸</p>
-      </div>
-      <div class="service-box">
-        <img src="img/12.jpg" alt="地區活動/福祉接送" />
-        <p><strong>地區活動/福祉接送</strong><br>深耕在地，靈活應對</p>
-      </div>
+<section class="section" id="fleet">
+  <h2 style="text-align: center;">巴士車型介紹</h2>
+  <div class="bus-type-grid">
+    <div class="bus-card">
+      <img src="img/4.jpg" alt="大型巴士" />
+      <h3>大型巴士</h3>
+      <p>30台 / 40・45・49人座</p>
     </div>
-  </section>
-
-  <section class="section" id="flow">
-    <h2>預約流程</h2>
-    <div class="flow-container">
-      <div class="flow-steps">
-        <div class="step">洽詢</div>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
-        <div class="step">報價</div>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
-        <div class="step">申請</div>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
-        <div class="step">付款</div>
-        <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
-        <div class="step done">✅ 完成！</div>
-      </div>
-      <p class="flow-note">※報價時請提供：預計出發日期、人數、上下車地點、目的地等資訊。</p>
+    <div class="bus-card">
+      <img src="img/35.jpg" alt="中型巴士" />
+      <h3>中型巴士</h3>
+      <p>6台 / 27・33人座</p>
     </div>
-  </section>
+    <div class="bus-card">
+      <img src="img/36.jpg" alt="小型巴士" />
+      <h3>小型巴士</h3>
+      <p>3台 / 22・17・18人座</p>
+    </div>
+    <div class="bus-card">
+      <img src="img/7.jpg" alt="Hiace廂型車" />
+      <h3>Hiace 廂型車</h3>
+      <p>2台 / 13人座</p>
+    </div>
+  </div>
 
-  <section class="section" id="contact">
+  <div class="bus-details-grid">
+    <div class="bus-detail-box">
+      <h4>追求安全性的設計</h4>
+      <img src="img/34.jpg" alt="車內照片" />
+      <p>所有座位配備安全帶，將乘客安全放在第一位。</p>
+    </div>
+    <div class="bus-detail-box">
+      <h4>安全至上的司機</h4>
+      <img src="img/32.jpg" alt="司機" />
+      <p>司機可使用日文與中文，歡迎搭車時隨時詢問。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="use">
+  <h2>使用場景</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <img src="img/9.jpg" alt="觀光 / 校外教學" />
+      <p>搭乘舒適的大型巴士享受快樂的旅程</p>
+    </div>
+    <div class="service-box">
+      <img src="img/10.jpg" alt="企業 / 團體接送" />
+      <p>可因應定期班車與包車需求</p>
+    </div>
+    <div class="service-box">
+      <img src="img/11.jpg" alt="活動 / 展覽" />
+      <p>可同時運送人員與設備</p>
+    </div>
+    <div class="service-box">
+      <img src="img/12.jpg" alt="地區活動 / 福利接送" />
+      <p>深耕在地、靈活應對各類用途</p>
+    </div>
+  </div>
+</section>
+<section class="section" id="flow">
+  <h2>預約流程</h2>
+  <div class="flow-container">
+    <div class="flow-steps">
+      <div class="step">洽詢</div>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+      <div class="step">報價</div>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+      <div class="step">申請</div>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+      <div class="step">付款</div>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
+      <div class="step done">✅ 完成！</div>
+    </div>
+    <p class="flow-note">
+      ※ 報價時請提供：預定出發日期、人數、上下車地點與目的地等資訊。
+    </p>
+  </div>
+</section>
+
+<section class="section" id="contact">
   <h2>公司資訊・聯絡我們</h2>
   <div class="contact-wrapper">
     <div class="contact-info-box">
       <h3>公司資訊</h3>
-      <p><strong>FLY觀光</strong></p>
+      <p><strong>FLY觀光股份有限公司</strong></p>
       <p>〒813-0023<br>日本福岡市東區蒲田4丁目5-53</p>
-      <p>電話：092-519-0886<br>傳真：092-516-3414</p>
-      <p>熊本營業所：<br>熊本縣菊池市泗水町吉富3201-4<br>Espoir 201室</p>
-      <p>Email：flykankou@yahoo.co.jp / fly20250407@gmail.com</p>
-      <div style="display: flex; gap: 1.2rem; align-items: flex-start; margin-top: 1rem;">
+      <p>電話：092-519-0886 / 傳真：092-516-3414</p>
+      <p><strong>熊本營業所</strong><br>熊本縣菊池市泗水町吉富3201-4</p>
+      <p>Email：flykankou@yahoo.co.jp</p>
+      <div style="display: flex; gap: 1rem; margin-top: 1rem;">
         <div style="text-align: center;">
-          <img src="img/line-qr.png" alt="LINE 二維碼" width="120" />
-          <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID：fly20250407@gmail.com</p>
+          <img src="img/line-qr.png" width="100" alt="LINE QR Code" />
+          <p>LINE ID：fly20250407@gmail.com</p>
         </div>
         <div style="text-align: center;">
-          <img src="img/wechat-qr.png" alt="WeChat 二維碼" width="120" />
-          <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID：FLYkankou</p>
+          <img src="img/wechat-qr.png" width="100" alt="WeChat QR Code" />
+          <p>WeChat ID：FLYkankou</p>
         </div>
       </div>
     </div>
+
     <div class="contact-form-box">
-      <h3>線上聯絡表單</h3>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezLi5hGcaP8U-VPw6MPNnW5jn4hk0zFwA4O4hw2AiU_4M9Eg/viewform?embedded=true"
-              width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">
-        載入中…
-      </iframe>
+      <h3>聯絡表單</h3>
+      <form action="https://formspree.io/f/xpwlajep" method="POST" class="contact-table-form">
+        <input type="hidden" name="_subject" value="FLY觀光 官方網站聯絡表單">
+        <input type="hidden" name="_next" value="https://flykanko.github.io/thanks.html">
+
+        <table>
+          <tr>
+            <th><label for="name">姓名</label></th>
+            <td><input type="text" name="name" id="name" required></td>
+          </tr>
+          <tr>
+            <th><label for="email">電子郵件</label></th>
+            <td><input type="email" name="email" id="email" required></td>
+          </tr>
+          <tr>
+            <th><label for="subject">聯絡類別</label></th>
+            <td>
+              <select name="subject" id="subject" required>
+                <option value="">請選擇</option>
+                <option value="報價">報價</option>
+                <option value="預約">預約</option>
+                <option value="其他">其他</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="phone">聯絡電話</label></th>
+            <td><input type="tel" name="phone" id="phone" required></td>
+          </tr>
+          <tr>
+            <th><label for="date">預定搭乘日期</label></th>
+            <td><input type="date" name="date" id="date" required></td>
+          </tr>
+          <tr>
+            <th><label for="message">聯絡內容</label></th>
+            <td><textarea name="message" id="message" rows="6" required></textarea></td>
+          </tr>
+        </table>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button type="submit">送出</button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
 
+<footer>
+  &copy; 2025 FLY觀光股份有限公司 版權所有
+</footer>
 
-  <footer>
-    &copy; 2025 FLY觀光股份有限公司 保留所有權利
-  </footer>
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+  const slider = document.getElementById("slider");
 
-  <script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll(".slide");
-    const slider = document.getElementById("slider");
-    function moveSlide(step) {
-      currentIndex = (currentIndex + step + slides.length) % slides.length;
-      slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
-    }
-    setInterval(() => moveSlide(1), 5000);
-  </script>
+  function moveSlide(step) {
+    currentIndex = (currentIndex + step + slides.length) % slides.length;
+    slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
+  }
+
+  setInterval(() => moveSlide(1), 5000);
+</script>
 </body>
 </html>

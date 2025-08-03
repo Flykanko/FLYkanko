@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FLY관광 주식회사</title>
+  <title>FLY관광 주식회사 | 규슈의 전세 및 관광버스</title>
+  <meta name="description" content="FLY관광은 규슈를 중심으로 전세 및 관광버스 서비스를 제공합니다. 후쿠오카・구마모토・오이타 등 출발 가능. 안전하고 쾌적한 버스 여행을 제공합니다.">
+  <meta name="keywords" content="후쿠오카, 관광버스, 전세버스, 규슈, FLY관광, 단체여행, 수학여행, 이벤트 송영">
   <link rel="stylesheet" href="flykankou-style.css" />
-  <style>
-    .language-switcher a[href*="index-ko.html"] {
-      font-weight: bold;
-      color: #e3007f;
-    }
-  </style>
 </head>
 <body>
   <div class="language-switcher">
@@ -18,7 +14,7 @@
     <a href="index-en.html">English</a>
     <a href="index-zh.html">简体中文</a>
     <a href="index-tw.html">繁體中文</a>
-    <a href="index-ko.html">한국어</a>
+    <a href="index-ko.html" style="font-weight: bold; color: #e3007f;">한국어</a>
     <a href="index-th.html">ภาษาไทย</a>
   </div>
 
@@ -31,8 +27,9 @@
       <nav>
         <a href="#fleet">차량 라인업</a>
         <a href="#tour-examples">투어 예시</a>
+        <a href="#recruit">채용 안내</a>
         <a href="#use">이용 사례</a>
-        <a href="#flow">예약 흐름</a>
+        <a href="#flow">예약 절차</a>
         <a href="#contact">문의하기</a>
       </nav>
       <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
@@ -43,8 +40,8 @@
     <div class="slider-wrapper">
       <div class="slider" id="slider">
         <div class="slide" style="background-image: url('img/bus1.jpg');">
-          <h1>편안하고 안전한 당일치기 버스 여행</h1>
-          <p>계절의 변화를 즐기며 마음이 편안해지는 여행</p>
+          <h1>버스로 떠나는! 쾌적하고 안전하며 합리적인 당일치기 여행</h1>
+          <p>계절이 바뀌는 풍경 속에서 마음이 편안해지는 여행을.</p>
           <a href="#contact" class="cta-button">문의하기</a>
         </div>
         <div class="slide" style="background-image: url('img/bus2.jpg');"></div>
@@ -64,185 +61,206 @@
         </div>
       </div>
       <div style="flex: 1 1 35%; min-width: 280px;">
-        <h2 style="font-size: 1.5rem; font-weight: bold; color: #111; margin-bottom: 12px;">미디어의 신뢰는 고객의 신뢰로 이어집니다</h2>
-        <h3 style="font-size: 1rem; color: #666; margin-bottom: 20px;">FLY관광은 매일 안전하고 쾌적한 이동을 지원합니다.</h3>
+        <h2 style="font-size: 1.5rem; font-weight: bold; color: #111; margin-bottom: 12px;">FBS 보도 소개<br>미디어의 신뢰는 고객의 신뢰로 이어집니다</h2>
+        <h3 style="font-size: 1rem; color: #666; margin-bottom: 20px;">FLY관광은 안전하고 쾌적한 이동을 전면적으로 지원합니다</h3>
         <p style="font-size: 0.9rem; line-height: 1.7; color: #333;">
-          방송 보도를 통해 당사의 안전하고 쾌적한 운행 노력을 소개해왔습니다.<br>
-          운전자는 철저한 교육을 받으며 차량은 엄격한 점검을 거치고 있습니다.<br>
-          우리는 단순한 이동 수단이 아닌, 믿음직한 여행 파트너가 되고자 합니다.<br><br>
-          모든 직원은 다시 이용하고 싶은 서비스 제공을 위해 성실히 임하고 있습니다.<br><br>
-          아래 영상을 통해 FLY관광의 매력과 진심 어린 노력을 확인해보세요.
+          TV 보도를 통해, 저희 FLY관광은 일상 운행에서의 안전성과 쾌적함에 대한 노력을 널리 소개해드렸습니다.<br>
+          운전기사의 철저한 안전 교육, 엄격한 차량 정비 기준, 그리고 고객 한 분 한 분을 소중히 여기는 서비스 정신.<br>
+          우리는 단순한 “이동 수단”이 아니라, 고객님의 여행 가치를 높이는 “믿을 수 있는 파트너”가 되고자 합니다.<br>
+          전 직원이 “또 타고 싶다”는 인상을 줄 수 있도록 성실하고 정중하게 노력하고 있습니다.<br><br>
+          아래 영상에서는 실제 인터뷰를 통해 FLY관광의 매력과 일상의 노력을 확인하실 수 있습니다. 꼭 끝까지 시청해 주세요.
         </p>
       </div>
     </div>
   </section>
-
-  <section class="section" id="tour-examples">
+<section class="section" id="tour-examples">
   <h2>투어 예시</h2>
 
-  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
+  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; align-items: flex-start;">
     <div style="flex: 1 1 50%;">
-      <img src="img/13.jpg" alt="다이칸보 전망대" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      <img src="img/20.jpg" alt="다이칸보 전망대" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;" />
     </div>
     <div style="flex: 1 1 45%;">
-      <h3>다이칸보 지역의 절경</h3>
-      <p>아소의 대자연을 한눈에 조망할 수 있는 명소 "다이칸보". 절경과 함께 여유로운 시간을 보내보세요.</p>
+      <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+        <img src="img/22.jpg" alt="다이칸보1" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px;" />
+        <img src="img/23.jpg" alt="다이칸보2" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px;" />
+        <img src="img/24.jpg" alt="다이칸보3" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px;" />
+      </div>
+      <h3>규슈 절경 명소</h3>
+      <p>모토노스미 이나리 신사 - 야나가와 - 이토시마 - 타카치호 협곡</p>
+      <p style="font-size: 0.95rem; line-height: 1.6;">
+        자연과 문화가 조화를 이루는 풍요로운 하루. 모토노스미 신사의 붉은 도리이는 바다 위에 빛나고, 야나가와에서는 조용한 강을 따라 유유자적한 뱃놀이를 즐깁니다. 이토시마의 카페와 바닷가 풍경, 타카치호의 신비로운 계곡미까지.<br>
+        <strong>→ 몸과 마음을 치유해주는 감동 가득한 절경 코스입니다.</strong>
+      </p>
     </div>
   </div>
 
-  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; flex-direction: row-reverse; margin-bottom: 3rem;">
+  <div class="tour-example-item" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; flex-direction: row-reverse; align-items: flex-start;">
     <div style="flex: 1 1 50%;">
-      <img src="img/14.jpg" alt="아소 초원 풍경" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+      <img src="img/21.jpg" alt="아소 초원 풍경" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;" />
     </div>
     <div style="flex: 1 1 45%;">
-      <h3>초원이 펼쳐진 힐링 공간</h3>
-      <p>넓게 펼쳐진 아소의 초원은 바쁜 일상에서 벗어나 마음을 치유해주는 자연 그대로의 공간입니다.</p>
-    </div>
-  </div>
-
-  <div class="fukuoka-tour-group">
-    <div class="fukuoka-tour-label">후쿠오카 당일치기</div>
-    <div class="spot-gallery five-columns fukuoka-gallery">
-      <div class="spot-item"><img src="img/15.jpg" alt="후쿠오카 지도" /><p>후쿠오카 지도</p></div>
-      <div class="spot-item"><img src="img/16.jpg" alt="무나카타 타이샤" /><p>무나카타 타이샤</p></div>
-      <div class="spot-item"><img src="img/17.jpg" alt="우미노나카미치" /><p>우미노나카미치</p></div>
-      <div class="spot-item"><img src="img/18.jpg" alt="다자이후 텐만구" /><p>다자이후 텐만구</p></div>
-      <div class="spot-item"><img src="img/19.jpg" alt="야나가와 뱃놀이" /><p>야나가와 뱃놀이</p></div>
+      <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center;">
+        <img src="img/25.jpg" alt="초원1" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px;" />
+        <img src="img/26.jpg" alt="초원2" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px;" />
+        <img src="img/27.jpg" alt="초원3" style="width: 30%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px;" />
+      </div>
+      <h3>웅대한 자연과 신비한 파워 스팟</h3>
+      <p>아소 화산 - 츠노시마 대교 - 카미시키미 쿠마노이마스 신사</p>
+      <p style="font-size: 0.95rem; line-height: 1.6;">
+        드넓은 초원과 분연을 내뿜는 아소 화산의 압도적인 스케일. 코발트 블루의 바다 위로 이어지는 츠노시마 대교, 고요한 숲속에 위치한 신비로운 신사.<br>
+        <strong>→ 비일상을 맛볼 수 있는 감동의 연속, 드라마틱한 여행 루트입니다.</strong>
+      </p>
     </div>
   </div>
 </section>
 
-
-  <section class="section" id="fleet">
-    <h2>선택 가능한 버스 차량</h2>
-    <div class="bus-type-grid">
-      <div class="bus-card">
-        <img src="img/4.jpg" alt="대형 버스" />
-        <h3>대형 버스</h3>
-        <p>11대 / 60석</p>
-      </div>
-      <div class="bus-card">
-        <img src="img/7.jpg" alt="중형 버스" />
-        <h3>중형 버스</h3>
-        <p>4대 / 40석</p>
-      </div>
-      <div class="bus-card">
-        <img src="img/4.jpg" alt="마이크로버스" />
-        <h3>마이크로버스</h3>
-        <p>2대 / 25석</p>
-      </div>
-      <div class="bus-card">
-        <img src="img/7.jpg" alt="하이에이스" />
-        <h3>하이에이스</h3>
-        <p>2대 / 10석</p>
-      </div>
+<section class="section" id="fleet">
+  <h2 style="text-align: center;">차량 라인업</h2>
+  <div class="bus-type-grid">
+    <div class="bus-card">
+      <img src="img/4.jpg" alt="대형 버스" />
+      <h3>대형 버스</h3>
+      <p>30대 / 40・45・49석</p>
     </div>
-
-    <div class="bus-details-grid">
-      <div class="bus-detail-box">
-        <h4>안전을 고려한 설계</h4>
-        <img src="img/7.jpg" alt="버스 내부" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;" />
-        <p>승객의 안전을 최우선으로 생각하며, 전 좌석에 안전벨트를 완비하였습니다.</p>
-      </div>
-      <div class="bus-detail-box">
-        <h4>안전을 최우선하는 운전자</h4>
-        <img src="img/8.jpg" alt="드라이버" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px;" />
-        <p>일본어 및 중국어가 가능한 운전자가 탑승합니다. 궁금한 점은 언제든지 문의해주세요.</p>
-      </div>
+    <div class="bus-card">
+      <img src="img/35.jpg" alt="중형 버스" />
+      <h3>중형 버스</h3>
+      <p>6대 / 27・33석</p>
     </div>
-  </section>
-
-  <section class="section" id="use">
-    <h2>용도에 따른 이용 사례</h2>
-    <div class="service-grid">
-      <div class="service-box">
-        <div style="position: relative;">
-          <img src="img/9.jpg" alt="관광 투어 / 학교 소풍" />
-          <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">관광 투어 / 학교 소풍</div>
-        </div>
-        <p style="text-align: center; margin-top: 0.6rem;">쾌적한 대형 버스로 즐거운 여행을</p>
-      </div>
-
-      <div class="service-box">
-        <div style="position: relative;">
-          <img src="img/10.jpg" alt="기업 / 단체 송영" />
-          <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">기업 / 단체 송영</div>
-        </div>
-        <p style="text-align: center; margin-top: 0.6rem;">정기편 / 전세편 모두 대응 가능</p>
-      </div>
-
-      <div class="service-box">
-        <div style="position: relative;">
-          <img src="img/11.jpg" alt="이벤트 / 전시회" />
-          <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">이벤트 / 전시회</div>
-        </div>
-        <p style="text-align: center; margin-top: 0.6rem;">사람과 장비를 함께 운송</p>
-      </div>
-
-      <div class="service-box">
-        <div style="position: relative;">
-          <img src="img/12.jpg" alt="지역 활동 / 복지 차량" />
-          <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 6px 10px; border-radius: 6px; font-size: 0.95rem;">지역 활동 / 복지 차량</div>
-        </div>
-        <p style="text-align: center; margin-top: 0.6rem;">지역密착, 유연한 대응력</p>
-      </div>
+    <div class="bus-card">
+      <img src="img/36.jpg" alt="마이크로버스" />
+      <h3>마이크로버스</h3>
+      <p>3대 / 22・17・18석</p>
     </div>
-  </section>
+    <div class="bus-card">
+      <img src="img/7.jpg" alt="하이에이스" />
+      <h3>하이에이스</h3>
+      <p>2대 / 13석</p>
+    </div>
+  </div>
+
+  <div class="bus-details-grid">
+    <div class="bus-detail-box">
+      <h4>안전을 최우선한 설계</h4>
+      <img src="img/34.jpg" alt="버스 내부" />
+      <p>승객의 안전을 최우선으로 생각하여 전 좌석에 안전벨트를 완비하고 있습니다.</p>
+    </div>
+    <div class="bus-detail-box">
+      <h4>안전 제일의 드라이버</h4>
+      <img src="img/32.jpg" alt="드라이버" />
+      <p>일본어와 중국어를 구사하는 운전기사가 탑승합니다. 궁금한 점은 언제든지 문의해 주세요.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="use">
+  <h2>이용 사례</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <img src="img/9.jpg" alt="관광 투어 / 수학여행" />
+      <p>쾌적한 대형 버스로 즐거운 여행을</p>
+    </div>
+    <div class="service-box">
+      <img src="img/10.jpg" alt="기업 / 단체 송영" />
+      <p>정기편・전세편 모두 대응 가능</p>
+    </div>
+    <div class="service-box">
+      <img src="img/11.jpg" alt="이벤트 / 전시회" />
+      <p>사람과 장비를 함께 운송</p>
+    </div>
+    <div class="service-box">
+      <img src="img/12.jpg" alt="지역 활동 / 복지 송영" />
+      <p>지역密착, 유연한 대응력</p>
+    </div>
+  </div>
+</section>
 <section class="section" id="flow">
   <h2>예약 절차</h2>
   <div class="flow-container">
     <div class="flow-steps">
       <div class="step">문의</div>
-      <svg class="arrow-icon" viewBox="0 0 24 24">
-        <path fill="#0099ff" d="M10 17l5-5-5-5v10z" />
-      </svg>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
       <div class="step">견적</div>
-      <svg class="arrow-icon" viewBox="0 0 24 24">
-        <path fill="#0099ff" d="M10 17l5-5-5-5v10z" />
-      </svg>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
       <div class="step">신청</div>
-      <svg class="arrow-icon" viewBox="0 0 24 24">
-        <path fill="#0099ff" d="M10 17l5-5-5-5v10z" />
-      </svg>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
       <div class="step">입금</div>
-      <svg class="arrow-icon" viewBox="0 0 24 24">
-        <path fill="#0099ff" d="M10 17l5-5-5-5v10z" />
-      </svg>
+      <svg class="arrow-icon" viewBox="0 0 24 24"><path fill="#0099ff" d="M10 17l5-5-5-5v10z"/></svg>
       <div class="step done"><span class="check">✅</span> 완료!</div>
     </div>
     <div class="flow-note">
-      ※ 견적 요청 시, 이용 예정일・인원・배차 장소・목적지 등의 정보를 알려주세요.
+      ※ 견적 요청 시, 이용 예정일・인원・픽업 장소・목적지 등의 정보를 알려주세요.
     </div>
   </div>
 </section>
 
 <section class="section" id="contact">
-  <h2>문의 및 회사 정보</h2>
+  <h2>회사 정보 및 문의</h2>
   <div class="contact-wrapper">
     <div class="contact-info-box">
       <h3>회사 정보</h3>
       <p><strong>FLY관광 주식회사</strong></p>
       <p>〒813-0023<br>일본 후쿠오카시 히가시구 가마타 4-5-53</p>
-      <p>전화：092-519-0886<br>팩스：092-516-3414</p>
-      <p>구마모토 지사：<br>구마모토현 기쿠치시 시스이마치 요시토미 3201-4<br>에스포아르 201호</p>
-      <p>이메일：flykankou@yahoo.co.jp</p>
-
-      <div style="display: flex; gap: 1.2rem; align-items: flex-start; margin-top: 1rem;">
+      <p><strong>구마모토 지사</strong><br>구마모토현 기쿠치시 시스이마치 요시토미 3201-4</p>
+      <p>전화: 092-519-0886 / 팩스: 092-516-3414</p>
+      <p>이메일: flykankou@yahoo.co.jp</p>
+      <div style="display: flex; gap: 1rem; margin-top: 1rem;">
         <div style="text-align: center;">
-          <img src="img/line-qr.png" alt="LINE QR 코드" width="120" />
-          <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">LINE ID: fly20250407@gmail.com</p>
+          <img src="img/line-qr.png" width="100" alt="LINE QR" />
+          <p>LINE ID: fly20250407@gmail.com</p>
         </div>
         <div style="text-align: center;">
-          <img src="img/wechat-qr.png" alt="WeChat QR 코드" width="120" />
-          <p style="font-size: 0.85rem; margin: 0.2rem 0 0;">WeChat ID: FLYkankou</p>
+          <img src="img/wechat-qr.png" width="100" alt="WeChat QR" />
+          <p>WeChat ID: FLYkankou</p>
         </div>
       </div>
     </div>
 
     <div class="contact-form-box">
       <h3>문의 양식</h3>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezLi5hGcaP8U-VPw6MPNnW5jn4hk0zFwA4O4hw2AiU_4M9Eg/viewform?embedded=true"
-              width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">불러오는 중…</iframe>
+      <form action="https://formspree.io/f/xpwlajep" method="POST" class="contact-table-form">
+        <input type="hidden" name="_subject" value="FLY관광 웹사이트 문의">
+        <input type="hidden" name="_next" value="https://flykanko.github.io/thanks.html">
+
+        <table>
+          <tr>
+            <th><label for="name">성함</label></th>
+            <td><input type="text" name="name" id="name" required></td>
+          </tr>
+          <tr>
+            <th><label for="email">이메일</label></th>
+            <td><input type="email" name="email" id="email" required></td>
+          </tr>
+          <tr>
+            <th><label for="subject">문의 유형</label></th>
+            <td>
+              <select name="subject" id="subject" required>
+                <option value="">선택해주세요</option>
+                <option value="견적">견적</option>
+                <option value="예약">예약</option>
+                <option value="기타">기타</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="phone">전화번호</label></th>
+            <td><input type="tel" name="phone" id="phone" required></td>
+          </tr>
+          <tr>
+            <th><label for="date">희망 이용일</label></th>
+            <td><input type="date" name="date" id="date" required></td>
+          </tr>
+          <tr>
+            <th><label for="message">문의 내용</label></th>
+            <td><textarea name="message" id="message" rows="6" required></textarea></td>
+          </tr>
+        </table>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button type="submit">보내기</button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -263,4 +281,3 @@
 </script>
 </body>
 </html>
-

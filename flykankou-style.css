@@ -1,9 +1,15 @@
+html {
+  font-size: 20px; /* 原本是16px，提升为18px */
+}
+
 body {
-  font-size: 16px;
+  font-size: 1rem; /* 使用 rem 让内容跟随 html 的 font-size 缩放 */
   line-height: 1.7;
   margin: 0;
   font-family: sans-serif;
+  transform-origin: top center;
 }
+
 
 .header-container {
   display: flex;
@@ -110,9 +116,11 @@ nav.open {
 
 .section {
   padding: 4rem 1rem;
-  max-width: 1140px;
+  max-width: 1400px; /* 原来是1140px，建议改为更宽 */
   margin: auto;
+  font-size: 1.1rem; /* 字体整体再放大一点 */
 }
+
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -391,13 +399,32 @@ html {
   margin-top: 10px;
 }
 
-.bus-type-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
+.bus-card {
+  width: 100%;
+  max-width: 240px;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s;
 }
+.bus-card {
+  max-width: 280px; /* 原为220px/240px */
+  font-size: 1.1rem;
+}
+.bus-card h3 {
+  font-size: 1.2rem;
+}
+.bus-info {
+  font-size: 1rem;
+}
+
+
+.bus-card:hover {
+  transform: scale(1.03);
+}
+
 
 .bus-card {
   width: 220px;
@@ -408,11 +435,7 @@ html {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.bus-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 0.8rem;
-}
+
 
 .bus-card h3 {
   margin: 0.5rem 0 0.3rem;
@@ -432,7 +455,7 @@ html {
   margin-top: 2rem;
 }
 
-.bus-detail-box {
+.{
   flex: 1 1 400px;
   max-width: 480px;
   background: #f5faff;
@@ -450,9 +473,28 @@ html {
 
 .bus-detail-box img {
   width: 100%;
+  max-width: 600px;         /* 控制宽度不超过容器 */
+  aspect-ratio: 16 / 9;     /* 横向长方形比例 */
+  object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 0.8rem;
+  margin: 0 auto 1rem;      /* 上下留白，左右居中 */
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
+
+.bus-details-grid {
+  justify-content: center;
+  gap: 3rem;
+}
+.bus-detail-box {
+  flex: 1 1 480px;
+  max-width: 640px;
+  text-align: center;
+}
+
+
+
 
 .bus-detail-box p {
   font-size: 0.95rem;
@@ -805,4 +847,64 @@ iframe {
 
 .contact-table-form button:hover {
   background-color: #005bbb;
+}
+.bus-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
+.bus-info {
+  font-size: 0.95rem;
+  font-family: monospace;
+  color: #0070c0;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.6;
+  min-height: 1.6em; /* 保证高度一致 */
+}
+.bus-type-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 强制一行显示4个 */
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+@media (max-width: 1024px) {
+  .bus-type-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .bus-type-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#recruit h3,
+#recruit p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.service-box img {
+  aspect-ratio: 4/3;
+}
+
+.service-box p {
+  font-size: 1rem;
+}
+.bus-detail-img {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 1rem;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
