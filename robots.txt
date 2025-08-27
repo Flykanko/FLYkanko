@@ -1,3 +1,6 @@
+# robots.txt for FLY観光 (GitHub Pages)
 User-agent: *
 Allow: /
+
+# 指定 Sitemap
 Sitemap: https://flykanko.github.io/FLYkanko/sitemap.xml
